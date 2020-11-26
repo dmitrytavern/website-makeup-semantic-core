@@ -1,0 +1,12 @@
+.tab-content
+  position: relative
+
+.tab-content > .tab-pane
+  &:not(.active)
+    display: none
+
+.fade
+  transition: opacity .2s linear
+
+  &:not(.show)
+    opacity: 0
