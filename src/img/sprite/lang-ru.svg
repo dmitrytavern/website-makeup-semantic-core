@@ -13,7 +13,7 @@
                             <mask id="mask-2" fill="white">
                                 <use xlink:href="#path-1"></use>
                             </mask>
-                            <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.726190476" width="27.5" height="18.547619" rx="2"></rect>
+                            <rect stroke="#fff" fill="#fff" stroke-width="0.5" x="0.25" y="0.726190476" width="27.5" height="18.547619" rx="2"></rect>
                             <rect id="Rectangle-2" fill="#0C47B7" mask="url(#mask-2)" x="0" y="6.82539683" width="28" height="6.34920635"></rect>
                             <rect id="Rectangle-2" fill="#E53B35" mask="url(#mask-2)" x="0" y="13.1746032" width="28" height="6.34920635"></rect>
                         </g>

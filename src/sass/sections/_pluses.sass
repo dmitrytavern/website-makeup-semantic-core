@@ -1,2 +1,77 @@
 .pluses
+  position: relative
   margin-top: 140px
+  background: #F4F8FF
+
+  &__dot-top
+    left: 0
+    top: 0
+    transform: translateY(-30%)
+
+  &__dot-center
+    left: 49%
+    top: 29%
+
+  &__dot-prices
+    bottom: -2%
+    left: -27%
+
+  li
+    font-family: "TTCommons", sans-serif
+
+  &__inner
+    padding-top: 60px
+    padding-bottom: 65px
+
+  &__title
+    margin-bottom: 90px
+
+  &__grid
+    display: grid
+    grid-template-columns: 1fr 340px 1fr
+    grid-column-gap: 90px
+
+    > div
+      position: relative
+
+  &__text-column
+    padding-top: 50px
+
+  &__list
+    margin-top: 15px
+
+  &__prices
+    position: relative
+    background: #ffffff
+    border-radius: 7px
+    padding: 40px 50px
+
+    li
+      display: flex
+      align-items: center
+      line-height: normal
+      margin: 20px 0
+
+      &:before
+        content: unset
+
+      &:first-child
+        margin-top: 0
+      &:last-child
+        margin-bottom: 0
+
+    &-icon
+      padding: 10px 6px
+      border-radius: 7px
+      background: #F3F3F3
+      margin-right: 18px
+
+      svg
+        display: block
+        max-width: 28px
+        max-height: 19px
+
+    &-rate
+      display: block
+      margin-top: 30px
+      font-family: 'TTCommons Italic', sans-serif

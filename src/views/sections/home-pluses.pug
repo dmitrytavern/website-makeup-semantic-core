@@ -1,1 +1,56 @@
 section.pluses
+    img( src=require('../../img/decor-1.png') ).dot.dot-1.pluses__dot-top
+    img( src=require('../../img/decor-1.png') ).dot.dot-1.pluses__dot-center
+
+    .container
+        .pluses__inner
+            h2.section-title.pluses__title Тексты под Ядро
+
+            .pluses__grid
+                div.pluses__text-column
+                    .section-subtitle-2 Доверяя запросы и тексты нам, вы получаете:
+
+                    ul.pluses__list
+                        li Лучшую интеграцию семантики в текст;
+                        li Копирайтеров, отлично работающих с СЯ;
+                        li Экономию времени и контроль качества;
+                        li Вычитку текстов нашим редактором.
+
+                div
+                    img( src=require('../../img/decor-2.png') ).dot.dot-2.pluses__dot-prices
+                    .pluses__prices
+                        ul.pluses__prices-list
+                            li
+                                .pluses__prices-icon
+                                    svg
+                                        use( xlink:href=sprite('lang-ru') )
+                                span Русский язык <span>-</span> <b>4$</b>
+
+                            li
+                                .pluses__prices-icon
+                                    svg
+                                        use( xlink:href=sprite('lang-us') )
+                                span Английский язык <span>-</span> <b>10$</b>
+
+                            li
+                                .pluses__prices-icon
+                                    svg
+                                        use( xlink:href=sprite('lang-de') )
+                                span Немецкий язык <span>-</span> <b>14$</b>
+
+                            li
+                                .pluses__prices-icon
+                                    svg
+                                        use( xlink:href=sprite('lang-www') )
+                                span Другие языки <span>-</span> <b>от 14$</b>
+
+                        i.pluses__prices-rate за 1000 символов.
+
+                div.pluses__text-column
+                    .section-subtitle-2 Избавляетесь от таких хлопот как:
+
+                    ul.pluses__list
+                        li По поиску и выбору копирайтеров;
+                        li По обучению их работе с ядром;
+                        li Не тратите время на общение с копирайтерами;
+                        li Не тратите время на правки и доработки текстов.
