@@ -1,9 +1,16 @@
+.is-loaded .header
+  transition: border .3s, background-color .3s
+
+.is-loaded .header__inner
+  transition: padding .3s
+
 .header
   position: fixed
   top: 0
   left: 0
   right: 0
   z-index: 10
+  border-bottom: 1px solid rgba(#F5F5F5, 0)
 
   &__inner
     padding: 44px 0
@@ -21,6 +28,7 @@
     svg
       max-width: 238px
       max-height: 39px
+      display: block
 
   &__navigation
     margin-right: 50px
@@ -42,3 +50,10 @@
 
   &__telegram
     border-bottom-left-radius: 0
+
+  &.is-scroll
+    background: #ffffff
+    border-color: #F5F5F5
+
+    .header__inner
+      padding: 20px 0
