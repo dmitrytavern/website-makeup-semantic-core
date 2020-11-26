@@ -1,2 +1,21 @@
 mixin header()
-	header
+    header.header
+        .container
+            .header__inner
+
+                .header__column
+                    .header__logo
+                        svg
+                            use( xlink:href=sprite('site-logo') )
+
+                .header__column
+                    nav.header__navigation
+                       ul
+                           li <a href="#">Цены</a>
+                           li <a href="#">Контакты</a>
+                           li <a href="#">Отзывы</a>
+                           li <a href="#">Сотрудничество</a>
+
+                    a( href="#" ).header__telegram.btn.btn-primary-while.btn-icon
+                        i.icon-telegram
+                        span Телеграм

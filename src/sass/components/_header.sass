@@ -1,2 +1,40 @@
 .header
-  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+
+  &__inner
+    padding: 44px 0
+
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__column
+    display: flex
+    align-items: center
+
+  &__logo
+
+    svg
+      max-width: 238px
+      max-height: 39px
+
+  &__navigation
+    margin-right: 50px
+
+    ul
+      display: flex
+
+    li
+      margin: 0 25px
+
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+
+
+  &__telegram
+    border-bottom-left-radius: 0
