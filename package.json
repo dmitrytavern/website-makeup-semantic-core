@@ -6,7 +6,8 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "bootstrap": "^4.5.3",
+    "swiper": "^6.3.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.7",

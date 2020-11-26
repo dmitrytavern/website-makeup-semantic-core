@@ -39,3 +39,28 @@ $($headerMenuBtn).on('click', toggleHeaderMenu)
 $(window).on('resize', scrollPage)
 $(window).on('scroll', scrollPage)
 scrollPage()
+
+
+// Sliders
+
+new Swiper('.swiper-container', {
+	loop: false,
+	effect: 'fade',
+	noSwiping: true,
+	allowTouchMove: false,
+	fadeEffect: {
+		crossFade: true
+	},
+	pagination: {
+		el: '.slider__pagination',
+		bulletClass: 'slider__bullet',
+		bulletActiveClass: 'is-active',
+		clickable: true
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+		disabledClass: 'is-disabled'
+	},
+})

@@ -1,0 +1,42 @@
+.slider
+  &__arrows
+    display: flex
+    justify-content: center
+
+  &__arrow
+    outline: none
+    margin: 0 8px
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &__pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    min-height: 12px
+    margin-top: 35px
+
+  &__bullet
+    transition: width .3s, height .3s, background-color .3s
+    display: block
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    background: #C6D8FF
+    margin: 0 6px
+    cursor: pointer
+    outline: none
+
+    &.is-active
+      background: $color-primary
+      width: 12px
+      height: 12px
+
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0

@@ -1,1 +1,71 @@
 section.cases
+    .container
+        h2.section-title.cases__title Наши кейсы
+
+    .cases__content
+        img( src=require('../../img/decor-3.png') ).dot.dot-3.cases__dot-right
+        img( src=require('../../img/decor-1.png') ).dot.dot-1.cases__dot-left
+
+        .container
+            .cases__inner
+                .swiper-container.cases__slider
+                    .slider__arrows.cases__slider-arrows
+                        .slider__arrow.btn.btn-round-arrow.swiper-button-prev
+                            i.icon-left-arrow
+                        .slider__arrow.btn.btn-round-arrow.swiper-button-next
+                            i.icon-right-arrow
+
+                    .swiper-wrapper
+
+                        .swiper-slide.slider__slide
+                            .cases__case.case-card
+                                .case-card__inner
+                                    img( src=require('../../img/case-1.jpg') ).case-card__image
+                                    .case-card__content
+
+                                        .section-subtitle-1.case-card__content-title Клиентский проект под финскую стоматологию.
+
+                                        .case-card__content-group
+                                            .section-subtitle-3.case-card__content-subtitle 1.4 млн. евро дохода
+                                            p Мы привлекли за два года работы,  создавая для клиента органический поток SEO-трафика.
+
+                                        .case-card__content-group
+                                            .section-subtitle-3.case-card__content-subtitle 28 тыс. долларов
+                                            p Затраты на SEO-продвижение
+
+                                        p Полностью сделана семантика и On-Page. <br/> Постоянно ведется работа над линкбилдингом и управлением копирайтерами.
+
+                                        .case-card__content-links
+                                            a( href="#" target="_blank" ).btn-underline.case-card__content-link
+                                                span Search Console
+                                                i.icon-external-link
+
+                                            a( href="#" target="_blank" ).btn-underline.case-card__content-link
+                                                span Google Analytics
+                                                i.icon-external-link
+
+                        .swiper-slide.slider__slide
+                            .cases__case.case-card
+                                .case-card__inner
+                                    img( src=require('../../img/case-1.jpg') ).case-card__image
+                                    .case-card__content
+
+                                        .section-subtitle-1.case-card__content-title Клиентский проект под финский магазин.
+
+                                        .case-card__content-group
+                                            .section-subtitle-3.case-card__content-subtitle 1.0 млн. евро дохода
+                                            p Мы привлекли за два года работы, создавая для клиента органический поток SEO-трафика.
+
+                                        .case-card__content-group
+                                            .section-subtitle-3.case-card__content-subtitle 123 тыс. долларов
+                                            p Затраты на SEO-продвижение
+
+                                        p Полностью сделана семантика и On-Page. <br/> Постоянно ведется работа над линкбилдингом и управлением копирайтерами.
+
+                                        .case-card__content-links
+                                            a( href="#" target="_blank" ).btn-underline.case-card__content-link
+                                                span Google Analytics
+                                                i.icon-external-link
+
+
+                    .slider__pagination
