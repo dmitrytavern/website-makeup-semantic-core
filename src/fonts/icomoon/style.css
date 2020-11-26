@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-external-link:before {
+  content: "\e90b";
+  color: #5864ff;
+}
+.icon-zoom-in:before {
+  content: "\e90a";
+  color: #fff;
+}
 .icon-left-arrow:before {
   content: "\e909";
 }
