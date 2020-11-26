@@ -8,6 +8,11 @@ $(document).ready(function () {
 	document.body.classList.add('is-loaded')
 })
 
+$(".btn-up").click(function() {
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	return false;
+});
+
 
 //  Header
 
@@ -20,6 +25,12 @@ function scrollPage() {
 		$header.addClass('is-scroll')
 	} else {
 		$header.removeClass('is-scroll')
+	}
+
+	if (window.pageYOffset > 300) {
+		$(".btn-up").addClass('is-active')
+	} else {
+		$(".btn-up").removeClass('is-active')
 	}
 
 	setTimeout(function () {
