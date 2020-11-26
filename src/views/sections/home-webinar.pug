@@ -1,10 +1,10 @@
-section.process
+section.webinar
+    img( src=require('../../img/decor-1.png') ).dot.dot-2.webinar__dot-top
     .container
-        .process__inner
-            h2.section-title.process__title Процесс Работы
+        .webinar__inner
+            h3.webinar__title Вебинары
 
             .videos-box
-
                 .videos-box__list
 
                     .video
@@ -34,12 +34,12 @@ section.process
 
                             .video__title Работа в команде
 
-                .process__telegram.contact-box.videos-box__link-box
-                    .contact-box__btn.btn-round-primary
-                        i.icon-telegram
+                .contact-box.videos-box__link-box.webinar__youtube
 
-                    span.contact-box__vertical-line
+                    i.webinar__youtube-arrow.icon-right-arrow
+                    p.webinar__youtube-text Смотреть больше на нашем
+                    .webinar__youtube-box
+                        svg
+                            use( xlink:href=sprite('youtube') )
 
-                    .contact-box__content
-                        span Остались вопросы?
-                        a( href="#" target="_blank" ) Напиши в Телеграм
+                        span  <span class="red">Youtube</span> канале
