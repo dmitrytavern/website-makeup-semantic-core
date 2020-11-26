@@ -1,2 +1,42 @@
 .cooperation
+  position: relative
+  overflow: hidden
   margin-top: 150px
+
+  &__background
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    min-width: 100%
+    min-height: 100%
+    z-index: -1
+
+  &__title
+    margin-bottom: 90px
+
+  &__inner
+    padding-top: 60px
+    padding-bottom: 65px
+
+  &__content
+    padding-top: 30px
+
+    &-description
+    font-family: 'TTCommons', sans-serif
+
+    .mb-35
+      margin-bottom: 35px
+
+    .mb-45
+      margin-bottom: 45px
+
+    .section-subtitle-2
+      font-family: 'TTCommons Bold', sans-serif
+      margin-bottom: 10px
+
+  &__button
+    display: block
+    margin: 60px auto 0
+    border: none
+    box-shadow: $box-shadow-25
