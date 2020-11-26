@@ -1,0 +1,36 @@
+.question
+
+  &__inner
+    transition: border-color .3s
+    border: 2px solid #C6D8FF
+    border-radius: 20px
+
+    &.is-active
+      border-color: $color-primary
+
+  &__front
+    padding: 30px 40px 25px 25px
+    font-size: 20px
+    cursor: pointer
+
+    i
+      transition: .3s
+      font-size: 14px
+      float: right
+
+    &:not(.collapsed)
+      i
+        transform: rotate(180deg)
+
+  &__answer
+    padding: 0 25px 25px
+
+    &-content
+      padding: 20px 25px
+      background: #ffffff
+      box-shadow: $box-shadow-20
+      border-radius: 20px
+
+      color: #2B2B2B
+      line-height: 21px
+      font-family: 'TTCommons', sans-serif

@@ -64,3 +64,14 @@ new Swiper('.swiper-container', {
 		disabledClass: 'is-disabled'
 	},
 })
+
+
+// Collapses
+
+$('.question__answer').on('show.bs.collapse', function () {
+	$(this).parent().addClass('is-active');
+});
+
+$('.question__answer').on('hide.bs.collapse', function () {
+	$(this).parent().removeClass('is-active');
+});
