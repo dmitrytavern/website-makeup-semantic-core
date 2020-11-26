@@ -1,0 +1,39 @@
+.prices-areas
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  li:before
+    content: unset
+
+  &__title
+    line-height: 44px
+    width: 100%
+    max-width: 472px
+
+  &__list
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    grid-column-gap: 5%
+    flex: 1
+
+  &__area
+    text-align: center
+    font-size: 20px
+
+    svg
+      display: block
+      max-width: 48px
+      max-height: 48px
+      margin: 0 auto
+
+    span
+      display: block
+
+    span.line
+      width: 100%
+      max-width: 91px
+
+      background: $color-background-darker
+      height: 3px
+      margin: 20px auto

@@ -2,7 +2,7 @@ section.prices
     .container
         h2.prices__title.section-title Цены и Примеры
 
-        .prices__inner
+        .prices__grid
 
             .prices-block
                 .prices-block__inner
@@ -62,3 +62,37 @@ section.prices
                 .prices-block__button.btn.btn-primary-split
                     span Заказать
                     span $100 за ТЗ
+
+        .prices__areas.prices-areas
+            h3.prices-areas__title Любим работать в самых <br/> Конкуретных <span class="primary-color">Нишах!</span>
+
+            ul.prices-areas__list
+                li.prices-areas__area
+                    svg
+                        use( xlink:href=sprite('icon-betting') )
+                    span.line
+                    span Беттинг
+
+                li.prices-areas__area
+                    svg
+                        use( xlink:href=sprite('icon-gambling') )
+                    span.line
+                    span Гемблинг
+
+                li.prices-areas__area
+                    svg
+                        use( xlink:href=sprite('icon-business') )
+                    span.line
+                    span Локал Бизнес
+
+                li.prices-areas__area
+                    svg
+                        use( xlink:href=sprite('icon-startup') )
+                    span.line
+                    span Стартап
+
+                li.prices-areas__area
+                    svg
+                        use( xlink:href=sprite('icon-pharma') )
+                    span.line
+                    span Pharma
