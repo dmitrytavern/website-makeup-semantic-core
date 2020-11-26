@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>RU</title>
+    <defs>
+        <rect id="path-1" x="0" y="0.476190476" width="28" height="19.047619" rx="2"></rect>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-1600" transform="translate(-688.000000, -2625.000000)">
+            <g id="Text-2" transform="translate(1.000000, 2356.000000)">
+                <g id="Prices-2" transform="translate(553.000000, 190.000000)">
+                    <g id="Group-39" transform="translate(128.000000, 69.000000)">
+                        <g id="RU" transform="translate(6.000000, 10.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.726190476" width="27.5" height="18.547619" rx="2"></rect>
+                            <rect id="Rectangle-2" fill="#0C47B7" mask="url(#mask-2)" x="0" y="6.82539683" width="28" height="6.34920635"></rect>
+                            <rect id="Rectangle-2" fill="#E53B35" mask="url(#mask-2)" x="0" y="13.1746032" width="28" height="6.34920635"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

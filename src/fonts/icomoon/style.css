@@ -1,0 +1,49 @@
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left-arrow:before {
+  content: "\e909";
+}
+.icon-at:before {
+  content: "\e900";
+  color: #5864ff;
+}
+.icon-check:before {
+  content: "\e901";
+  color: #5864ff;
+}
+.icon-down-arrow:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+  color: #5864ff;
+}
+.icon-play:before {
+  content: "\e904";
+  color: #5864ff;
+}
+.icon-right-arrow:before {
+  content: "\e905";
+}
+.icon-telegram:before {
+  content: "\e906";
+}
+.icon-top-arrow:before {
+  content: "\e907";
+}
+.icon-whatsapp:before {
+  content: "\e908";
+}

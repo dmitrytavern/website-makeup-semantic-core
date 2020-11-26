@@ -1,0 +1,19 @@
+extends layout/default
+
+
+block content
+    include sections/home-intro
+    include sections/home-prices
+    include sections/home-pluses
+    include sections/home-cases
+    include sections/home-reviews
+    include sections/home-about
+    include sections/home-questions
+    include sections/home-cooperation
+
+
+block script-plugins
+    script( src=require('../js/vendor/jquery.min') )
+    script( src=require('../js/vendor/jquery.fancybox.min') )
+    script( src=require('../js/vendor/glide.min') )
+    script( src=require('../js/vendor/bootstrap.min') )

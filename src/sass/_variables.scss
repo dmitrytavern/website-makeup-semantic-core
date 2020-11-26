@@ -1,0 +1,98 @@
+// Fonts
+
+$font: 'TTCommons';
+$font-size: 19px;
+$font-weight: normal;
+$line-height: unset;
+
+
+// Heading
+
+$h1-font-size: min(calc(36px + 31 * ((100vw - 375px) / 1545)), 60px); // 36-60
+$h2-font-size: min(calc(38px + 16 * ((100vw - 375px) / 1545)), 48px); // 38-48
+$h3-font-size: min(calc(24px + 6 * ((100vw - 375px) / 1545)), 32px); // 24-32
+$h4-font-size: min(calc(22px + 6 * ((100vw - 375px) / 1545)), 30px); // 22-30
+$h5-font-size: min(calc(20px + 6 * ((100vw - 375px) / 1545)), 26px); // 20-26
+$h6-font-size: min(calc(19px + 6 * ((100vw - 375px) / 1545)), 24px); // 19-24
+
+// 60
+// 48
+// 32
+// 30
+// 26
+// 24
+
+// Color
+
+$color-primary: #5864FF;
+$color-secondary: #6F5EEA;
+$color-text: #000000;
+
+$color-background: #F4F8FF;
+$color-background-darker: #E9F0FF;
+$color-background-gray: #F3F3F3;
+
+// Box-shadow
+
+$box-shadow-25: 0 19px 40px rgba(#A49ED1, .25); // big buttons
+$box-shadow-20: 0 19px 40px rgba(#A49ED1, .20); // default buttons
+$box-shadow-15: 0 30px 45px rgba(#A49ED1, .15); // For blocks
+
+
+// Indents
+
+$indents-available: true;
+$indents-padding-available: false;
+$indents-margin-available: true;
+
+$indents: (
+        "margin": (
+                "0": 0,
+                "1": 15px,
+                "2": 20px,
+                "3": 30px
+        ),
+        "padding": (
+                "0": 0,
+                "1": 15px,
+                "2": 20px,
+                "3": 30px
+        )
+);
+
+
+
+// Links
+
+$link-decor: false;
+$link-decor-hover: false;
+
+$link-color: #000000;
+$link-color-hover: #000000;
+$link-color-visited: #000000;
+$link-color-active: #4831F2;
+
+
+// Buttons
+
+$btn-border-radius: 2px;
+$btn-transition: border .3s;
+
+$btn-font: 'TTCommons Medium', sans-serif;
+$btn-font-weight: 500;
+$btn-font-size: 17px;
+$btn-padding: 11px 40px;
+
+$btn-sizes: (
+        "default": (
+                "font-size": $btn-font-size,
+                "padding": $btn-padding
+        )
+);
+
+
+// Dropdown
+
+$dropdown-transition: .3s;
+$dropdown-ico-size: 14px;
+$dropdown-ico-ml: 8px;

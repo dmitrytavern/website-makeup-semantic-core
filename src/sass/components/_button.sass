@@ -1,0 +1,122 @@
+.btn
+  font-family: 'TTCommons Medium', sans-serif
+  font-size: 18px
+  font-weight: 500
+  line-height: 24px
+
+  display: inline-block
+  text-align: center
+  border-radius: 100px
+  cursor: pointer
+
+
+// Primary
+
+.btn-primary
+  background: $color-primary
+  border: 2px solid #6F5EEA
+  color: #FFFFFF
+
+  box-shadow: $box-shadow-25
+  padding: 15px 35px 13px 35px
+
+
+.btn-primary-tab
+  background: $color-primary
+  border: 2px solid #6F5EEA
+  color: #FFFFFF
+  padding: 15px 44px 13px 44px
+  box-shadow: $box-shadow-25
+
+  &.is-active
+    border: 2px solid #5864FF
+    background: #ffffff
+    color: #000000
+    box-shadow: unset
+
+
+.btn-primary-while
+  background: #ffffff
+  color: $color-primary
+  box-shadow: $box-shadow-20
+  padding: 15px 35px 13px 35px
+
+.btn-primary-split
+  background: $color-primary
+  border: 2px solid #6F5EEA
+  color: #FFFFFF
+  box-shadow: $box-shadow-25
+
+  span
+    display: inline-block
+
+    &:first-child
+      padding: 16px 30px 16px 35px
+      border-right: 1px solid rgba(#000000, .1)
+
+    &:last-child
+      font-family: 'TTCommons DemiBold', sans-serif
+      padding: 0 20px 0 15px
+      vertical-align: text-top
+      font-size: 23px
+
+
+
+// Underline
+
+.btn-underline
+  position: relative
+  color: $color-primary
+  border-bottom: 1px solid $color-primary
+
+  &_icon
+    top: 0
+    right: 0
+
+
+
+
+// Rounds buttons
+
+.btn-round-primary
+  width: 58px
+  height: 58px
+
+  background: $color-primary
+  border: 2px solid #6F5EEA
+  color: #FFFFFF
+
+.btn-round-while
+  background: #FFFFFF
+  color: $color-primary
+
+.btn-round-arrow
+  width: 58px
+  height: 48px
+
+  background: #5864FF
+  color: #ffffff
+  border: 1px solid #5864FF
+
+  i
+    line-height: 44px
+    vertical-align: middle
+
+  &.is-disabled
+    background: transparent
+    border-color: #C6D8FF
+    color: #C6D8FF
+    cursor: not-allowed
+
+
+
+// Contructions
+// .btn.btn-primary
+// .btn.btn-primary-outline
+// .btn.btn-primary-while
+
+// .btn.btn-round-primary
+// .btn.btn-round-while
+
+// .btn.btn-round-arrow
+// .btn.btn-round-arrow_disabled

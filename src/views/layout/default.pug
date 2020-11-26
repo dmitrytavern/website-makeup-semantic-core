@@ -1,0 +1,32 @@
+include ../components/header
+include ../components/footer
+
+doctype html
+
+html(lang="en")
+    head
+        include parts/head
+        block head
+
+        include parts/styles
+        block styles
+
+    body
+
+        div
+            block header
+                +header()
+
+            main
+                block content
+
+        block footer
+            +footer()
+
+        block modal
+
+        block script-plugins
+
+        include parts/scripts
+
+        block scripts
