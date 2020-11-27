@@ -9,12 +9,17 @@ mixin header()
                             use( xlink:href=sprite('site-logo') )
 
                 .header__column
-                    nav.header__navigation
-                       ul
-                           li <a href="#" class="is-active">Цены</a>
-                           li <a href="#">Контакты</a>
-                           li <a href="#">Отзывы</a>
-                           li <a href="#">Сотрудничество</a>
+                    nav(id="header-anchors-navigation").header__navigation.navbar
+                       .hidden.
+                            <li><a href="#anchor-process" class="nav-link"></a></li>
+                            <li><a href="#anchor-text-core" class="nav-link"></a></li>
+                            <li><a href="#anchor-webinar" class="nav-link"></a></li>
+                            <li><a href="#anchor-questions" class="nav-link"></a></li>
+                       ul.nav.nav-pills
+                           li.nav-item <a href="#anchor-prices" class="nav-link">Цены</a>
+                           li.nav-item <a href="#" class="nav-link">Контакты</a>
+                           li.nav-item <a href="#anchor-reviews" class="nav-link">Отзывы</a>
+                           li.nav-item <a href="#anchor-coop" class="nav-link">Сотрудничество</a>
 
                     a( href="#" ).header__telegram.btn.btn-primary-while.btn-icon
                         i.icon-telegram
