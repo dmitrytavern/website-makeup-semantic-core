@@ -5,29 +5,72 @@
 
   &__image
     max-width: 610px
+    align-self: center
 
   &__content
-    padding-top: 30px
-    padding-bottom: 20px
+    padding-top: 5px
+    padding-bottom: 10px
     border-left: 1px solid #E9F0FF
     padding-left: 60px
     margin-left: 50px
     font-family: "TTCommons", sans-serif
 
+    &-primary-blcok
+      background: #E9F0FF
+      padding: 16px 20px 14px
+      border-radius: 100px
+      margin-bottom: 35px
+      font-size: 18px
+      display: inline-block
+
+      &.mb-min
+        margin-bottom: 30px
+
+    &-secondary-block
+      font-family: 'TTCommons DemiBold', sans-serif
+      padding: 11px 22px 8px
+      border: 2px solid #E9F0FF
+      border-radius: 100px
+      line-height: 24px
+      font-size: 20px
+      margin-right: 20px
+      flex: none
+
     &-title
-      margin-bottom: 30px
+      margin-bottom: 18px
 
     &-subtitle
       margin-bottom: 3px
 
+    &-paragraph
+      font-family: 'TTCommons Medium', sans-serif
+      line-height: 27px
+      color: #2B2B2B
+
     &-group
-      margin-bottom: 25px
+      display: flex
+      align-items: center
+      margin-bottom: 15px
+
+    &-list
+      margin-top: 30px
+
+      &.mt-min
+        margin-top: 18px
+
+      li
+        line-height: 24px
 
     &-links
-      margin-top: 40px
+      margin-top: 30px
 
     &-link
       margin: 0 24px
+
+      span
+        vertical-align: top
+        padding-bottom: 5px
+        margin-left: 12px
 
       &:first-child
         margin-left: 0
