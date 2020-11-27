@@ -1,0 +1,48 @@
+input
+  transition: border .3s, color .3s
+  font-size: 16px
+  font-family: 'TTCommons', sans-serif
+  border: 1px solid #E9F0FF
+  border-radius: 3px
+  background: #ffffff
+  padding: 18px 24px
+  color: #000
+  outline: none
+
+  &:focus
+    &::placeholder
+      opacity: 0
+
+  &::placeholder
+    color: #585858
+
+  &.is-error
+    border-color: #FC2A2A
+    color: #FC2A2A
+
+    &::placeholder
+      color: #FC2A2A
+
+    + .input__error
+      display: block
+
+.input
+  &__label
+    font-size: 16px
+    margin-bottom: 10px
+
+  &__error
+    display: none
+    color: #FC2A2A
+    margin-top: 10px
+    font-size: 16px
+
+  &-group
+    font-family: 'TTCommons', sans-serif
+
+    &.is-required
+      .input__label::before
+        content: '* '
+        color: $color-primary
+        font-family: 'TTCommons Bold', sans-serif
+        font-weight: bold

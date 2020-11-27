@@ -1,0 +1,40 @@
+#modal-order.modal
+    .modal__wrapper
+
+        .modal__close( data-dismiss="modal" )
+            i.icon-close
+
+        .modal__tab( data-name="form" ).is-active
+            h2.modal__title Access Request
+            form( method="POST" action="/callback" )#modal-order-form
+
+                .input-group.modal__input
+                    .input__label Адрес сайта или Тематика проекта
+                    input( type="text" name="site" placeholder="Ваш ответ")
+
+                .input-group.is-required.modal__input
+                    .input__label Ваш Email или Мессенджер
+                    input( type="text" name="contact" placeholder="Ваш ответ" data-required)
+                    .input__error Обязательное поле!
+
+                .modal__spliter
+
+                .input-group.modal__input
+                    input( type="text" name="examples" placeholder="Пример нужных запросов")
+
+                .input-group.modal__input
+                    input( type="text" name="count" placeholder="Сколько ТЗ нужно")
+
+                .input-group.modal__input
+                    input( type="text" name="fromKnow" placeholder="Где вы узнали о наших услугах")
+
+                .form-error-text No error
+
+                button( type="submit" ).btn.btn-primary.modal__btn.modal__btn-send Отправить
+
+        .modal__tab( data-name="success" )
+            h3.modal__subtitle Заказ отправлен!
+            p Спасибо, Ваш заказ принят в обработку! <br/> Мы свяжемся с вами в ближайнее время!
+            a(href="#" data-dismiss="modal").btn.btn-primary.modal__btn.modal__btn-success Закрыть
+
+.modal-custom-backdrop

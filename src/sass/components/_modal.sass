@@ -1,0 +1,122 @@
+body.is-loaded .modal
+  transition: visibility .3s, opacity .3s
+
+  &-custom-backdrop
+    transition: visibility .3s, opacity .3s
+
+.modal-open .body-content
+  transition: filter .3s
+  filter: blur(5px)
+
+.modal
+  @include visibility-hidden
+
+  max-width: 100%
+  padding: 0 20px !important
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 102
+
+  // Bg
+  &-custom-backdrop
+    @include visibility-hidden
+
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 101
+    background: rgba(#d8d8d8, .90)
+
+    &.is-open
+      @include visibility-visible
+
+  &.show
+    @include visibility-visible
+
+  &__wrapper
+    position: relative
+    background: #ffffff
+    padding: 48px 40px 40px
+    border-radius: 20px
+    box-shadow: $box-shadow-20
+
+  &__title
+    text-align: center
+    margin-bottom: 48px
+    font-size: 36px
+    line-height: 36px
+
+  &__subtitle
+    font-family: 'TTCommons Bold', sans-serif
+    font-size: 28px
+    margin-bottom: 30px
+
+  &__spliter
+    width: 90%
+    height: 1px
+    background: #E9F0FF
+    margin: 25px auto
+    display: block
+
+  &__input
+    margin-top: 24px
+
+    > input
+      width: 100%
+
+    &:last-child
+      margin-bottom: 0
+
+  &__btn
+    padding-left: 65px
+    padding-right: 65px
+
+    &-send
+      margin-top: 30px
+      margin-left: auto
+      margin-right: auto
+      display: block
+
+    &-success
+      margin-top: 60px
+
+  &__close
+    display: inline-flex
+    position: absolute
+    top: 8px
+    right: -40px
+    font-size: 12px
+    cursor: pointer
+    padding: 5px
+
+  &__tab
+    display: none
+
+    &[data-name="success"]
+      text-align: center
+      font-family: "TTCommons", sans-serif
+
+    &.is-active
+      display: block
+
+@media screen and (min-width: 768px)
+  .modal__input
+    > input
+      min-width: 375px
+
+@media screen and (max-width: 767px)
+  .modal
+    width: 100%
+    max-width: 480px
+
+    &__wrapper
+      padding-left: 20px
+      padding-right: 20px
+
+    &__close
+      top: 8px
+      right: 8px

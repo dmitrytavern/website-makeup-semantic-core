@@ -86,3 +86,93 @@ $('.question__answer').on('show.bs.collapse', function () {
 $('.question__answer').on('hide.bs.collapse', function () {
 	$(this).parent().removeClass('is-active');
 });
+
+// Modals
+
+$('.modal').on('show.bs.modal', function () {
+	$('.modal-custom-backdrop').addClass('is-open')
+})
+
+$('.modal').on('hide.bs.modal', function () {
+	$('.modal-custom-backdrop').removeClass('is-open')
+})
+
+$('.modal-custom-backdrop').on('click', function () {
+	$('.modal').modal('toggle')
+})
+
+
+// Working with form
+
+
+$('form input').on('focus', function () {
+	$(this).removeClass('is-error')
+})
+
+function activateError(el, name) {
+	$(`${el} input[name="${name}"]`).addClass('is-error')
+}
+
+function checkInputRequired(el, name) {
+	return $(`${el} input[name="${name}"]`).attr('data-required')
+}
+
+function checkFormData(el, data) {
+	let error = false
+	for (let { name, value } of data) {
+		if (value === '') {
+			if (checkInputRequired(el, name) !== undefined) {
+				error = true
+				activateError(el, name)
+			}
+		}
+	}
+
+	return error
+}
+
+function normalizeFormData(data) {
+	let obj = {}
+	for (let { name, value } of data) {
+		obj[name] = value
+	}
+
+	return obj
+}
+
+// Form in modal
+$('#modal-order-form').submit(function (e) {
+	e.preventDefault()
+	const data = $(this).serializeArray()
+
+	if (!checkFormData('#modal-order', data)) {
+		const normData = normalizeFormData(data)
+		$('#modal-order .modal__tab').removeClass('is-active')
+		$('#modal-order .modal__tab[data-name="success"]').addClass('is-active')
+		$.ajax({
+			url: '/callback',
+			method: 'POST',
+			dataType: 'JSON',
+			data: {
+				address: normData.site,
+				contact: normData.contact,
+				examples: normData.examples,
+				count: normData.count,
+				fromKnow: normData.fromKnow
+			}
+		})
+			.done(function () {
+				$('#modal-order .modal__tab').removeClass('is-active')
+				$('#modal-order .modal__tab[data-name="success"]').addClass('is-active')
+			})
+			.fail(function (res) {
+				const $errorText = $('#modal-order-form .form-error-text')
+				$errorText[0].innerHTML = res.message || 'Has Error'
+				$errorText.addClass('is-active')
+
+				setTimeout(function () {
+					$('#modal-order-form .form-error-text').removeClass('is-active')
+				}, 3000)
+			})
+	}
+})
