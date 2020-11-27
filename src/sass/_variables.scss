@@ -10,9 +10,9 @@ $line-height: unset;
 
 $h1-font-size: min(calc(36px + 31 * ((100vw - 375px) / 1545)), 60px); // 36-60
 $h2-font-size: min(calc(38px + 16 * ((100vw - 375px) / 1545)), 48px); // 38-48
-$h3-font-size: min(calc(24px + 6 * ((100vw - 375px) / 1545)), 32px); // 24-32
-$h4-font-size: min(calc(22px + 6 * ((100vw - 375px) / 1545)), 30px); // 22-30
-$h5-font-size: min(calc(20px + 6 * ((100vw - 375px) / 1545)), 26px); // 20-26
+$h3-font-size: min(calc(24px + 11 * ((100vw - 375px) / 1545)), 32px); // 24-32
+$h4-font-size: min(calc(22px + 10 * ((100vw - 375px) / 1545)), 30px); // 22-30
+$h5-font-size: min(calc(20px + 8 * ((100vw - 375px) / 1545)), 26px); // 20-26
 $h6-font-size: min(calc(19px + 6 * ((100vw - 375px) / 1545)), 24px); // 19-24
 
 // 60

@@ -12,8 +12,16 @@
     justify-content: center
     margin-bottom: 80px
 
-    li:before
-      content: unset
+    li
+      margin-left: 20px
+      margin-right: 20px
+
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+      &:before
+        content: unset
 
   &__tab-content
     display: grid
