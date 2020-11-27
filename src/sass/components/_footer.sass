@@ -11,5 +11,24 @@
     align-items: center
     justify-content: space-between
 
+  &__paymethods
+    display: flex
+
+    li
+      display: inline-flex
+      line-height: normal
+      margin: 0 20px
+
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+
+    svg
+      width: 92px
+      max-height: 26px
+      fill: #000000
+      opacity: .6
+
   &__developed-link
     color: $color-primary

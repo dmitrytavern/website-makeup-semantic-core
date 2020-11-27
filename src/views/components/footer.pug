@@ -4,4 +4,18 @@ mixin footer()
             .footer__inner
 
                 .footer__copuright © 2020. Все права сохранены.
+
+                ul.footer__paymethods
+                    li
+                        svg
+                            use( xlink:href=sprite('pay-webmoney') )
+                    li
+                        svg
+                            use( xlink:href=sprite('pay-yandex-money') )
+                    li
+                        svg
+                            use( xlink:href=sprite('pay-payoneer') )
+                    li
+                        svg
+                            use( xlink:href=sprite('pay-swift') )
                 .footer__developed Разработка сайта - <a href="http://greatpix.studio/" target="_blank" class="footer__developed-link">GreatPix</a>
