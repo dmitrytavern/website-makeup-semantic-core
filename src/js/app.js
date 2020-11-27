@@ -13,7 +13,7 @@ $(".btn-up").click(function() {
 	return false;
 });
 
-$("#header-anchors-navigation li a").on('click', function(event) {
+$("a[href*='#anchor-']").on('click', function(event) {
 	if (this.hash !== "") {
 		event.preventDefault();
 
