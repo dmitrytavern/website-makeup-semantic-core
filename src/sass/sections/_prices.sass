@@ -12,8 +12,36 @@
     grid-template-columns: 35% calc(30% - 40px) 35%
     grid-column-gap: 20px
 
+    > div
+      position: relative
+
   &__areas
     margin-top: 200px
 
 @import "prices/prices-block"
 @import "prices/prices-areas"
+
+@media screen and (max-width: 1439px)
+  .prices__grid
+    grid-template-columns: 54.4% calc(45.6% - 60px)
+    grid-column-gap: 60px
+    grid-row-gap: 100px
+    padding-left: 50px
+    padding-right: 50px
+
+  .prices__fixed
+    grid-column: 2
+    grid-row: 1/3
+
+  .prices__fixed-block
+    position: absolute
+    top: 0
+
+    &.is-fixed
+      position: fixed
+      top: 50px
+
+    &.is-fixed-bottom
+      position: absolute
+      bottom: 0
+      top: unset

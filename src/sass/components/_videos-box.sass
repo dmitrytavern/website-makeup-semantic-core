@@ -4,9 +4,27 @@
   &__list
     display: grid
     grid-template-columns: 1fr 1fr 1fr
-    grid-column-gap: 72px
 
-  &__link-box
-    min-width: 29.4%
-    margin-left: 75px
-    max-height: 180px
+@media screen and (min-width: 1440px)
+  .videos-box
+    &__list
+      grid-column-gap: 72px
+
+    &__link-box
+      max-height: 180px
+      margin-left: 75px
+      min-width: 29.4%
+
+@media screen and (max-width: 1439px)
+  .videos-box
+    flex-direction: column
+
+    &__list
+      grid-column-gap: 95px
+      padding-left: 30px
+      padding-right: 30px
+
+    &__link-box
+      margin-left: auto
+      margin-right: auto
+      margin-top: 70px

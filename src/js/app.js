@@ -25,6 +25,8 @@ $("a[href*='#anchor-']").on('click', function(event) {
 	}
 })
 
+const $pinBlock = $('#prices-pin-block')
+const $pinContainer = $('#prices-pin-container')
 
 //  Header
 
@@ -43,6 +45,28 @@ function scrollPage() {
 		$(".btn-up").addClass('is-active')
 	} else {
 		$(".btn-up").removeClass('is-active')
+	}
+
+	const pinContainerTop = $pinContainer.offset().top
+	const pinContainerHeight = $pinContainer.height()
+	const pinEnd = pinContainerTop + pinContainerHeight - $pinBlock.height() - $header.height() - 40
+
+	console.log(window.pageYOffset, pinEnd, pinContainerTop, pinContainerHeight, $pinBlock.height())
+
+	if (window.pageYOffset >= pinContainerTop - $header.height() - 40) {
+		if (window.pageYOffset >= pinEnd) {
+			$pinBlock.removeClass('is-fixed')
+			$pinBlock.addClass('is-fixed-bottom')
+			$pinBlock.css({ top: 'unset' })
+		} else {
+			$pinBlock.addClass('is-fixed')
+			$pinBlock.removeClass('is-fixed-bottom')
+			$pinBlock.css({ top: $header.height() + 40 })
+		}
+	} else {
+		$pinBlock.removeClass('is-fixed')
+		$pinBlock.removeClass('is-fixed-bottom')
+		$pinBlock.css({ top: 0 })
 	}
 
 	setTimeout(function () {
@@ -68,6 +92,7 @@ scrollPage()
 
 new Swiper('.swiper-container', {
 	loop: false,
+	autoHeight: true,
 	effect: 'fade',
 	noSwiping: true,
 	allowTouchMove: false,

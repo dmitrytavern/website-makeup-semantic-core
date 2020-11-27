@@ -13,16 +13,7 @@
     z-index: -1
     opacity: 0.7
 
-  &__title
-    margin-bottom: 90px
-
-  &__inner
-    padding-top: 60px
-    padding-bottom: 65px
-
   &__content
-    padding-top: 30px
-
     &-description
       font-family: 'TTCommons', sans-serif
 
@@ -41,3 +32,39 @@
     margin: 60px auto 0
     border: none
     box-shadow: $box-shadow-25
+
+@media screen and (min-width: 1440px)
+  .cooperation
+    &__title
+      margin-bottom: 90px
+
+    &__inner
+      padding-top: 60px
+      padding-bottom: 65px
+
+    &__content
+      padding-top: 30px
+
+@media screen and (max-width: 1439px)
+  .cooperation
+    margin-top: 90px
+
+    &__title
+      margin-bottom: 85px
+
+    &__inner
+      padding-top: 70px
+      padding-bottom: 50px
+
+    &__image-column
+      padding-right: 0
+
+    &__content
+      &-description
+        font-size: 18px
+
+      .mb-35
+        margin-bottom: 30px
+
+      .mb-45
+        margin-bottom: 35px

@@ -4,9 +4,7 @@
   background: #F4F8FF
 
   &__dot-top
-    left: 0
-    top: 0
-    transform: translateY(-30%)
+    display: none
 
   &__dot-center
     left: 49%
@@ -33,9 +31,6 @@
 
     > div
       position: relative
-
-  &__text-column
-    padding-top: 50px
 
   &__list
     margin-top: 15px
@@ -75,3 +70,38 @@
       display: block
       margin-top: 30px
       font-family: 'TTCommons Italic', sans-serif
+
+
+@media screen and (min-width: 1440px)
+  .pluses
+    &__text-column
+      padding-top: 50px
+
+    &__dot-top
+      display: block
+      left: 0
+      top: 0
+      transform: translateY(-30%)
+
+@media screen and (max-width: 1439px)
+  .pluses
+    overflow: hidden
+
+    &__dot-center
+      left: 74%
+
+    &__title
+      margin-bottom: 70px
+
+    &__grid
+      grid-template-columns: 1fr 340px
+      grid-row-gap: 50px
+      padding-left: 50px
+      padding-right: 100px
+
+    &__prices-column
+      grid-column: 2
+      grid-row: 1/3
+
+      display: flex
+      align-items: center

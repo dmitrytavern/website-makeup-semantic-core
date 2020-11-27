@@ -2,8 +2,13 @@
 
   &__container
     padding-top: 80px
-    padding-bottom: 70px
-    border-bottom: 1px solid #F5F5F5
+
+  &__line
+    margin-top: 70px
+    display: block
+    width: 100%
+    height: 1px
+    background: #F5F5F5
 
   &__item
     display: flex
@@ -25,3 +30,10 @@
       width: 1px
       height: 86px
       background: #EFEFEF
+
+
+@media screen and (max-width: 1439px)
+  .statistics
+    &__item
+      &-box:not(:last-child):before
+        content: unset

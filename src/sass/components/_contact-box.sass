@@ -13,10 +13,10 @@
 
   &__vertical-line
     width: 1px
-    height: 115px
+    height: 59px
     background: #E9F0FF
-    margin-left: 35px
-    margin-right: 35px
+    margin-left: 25px
+    margin-right: 23px
 
   &__content
     font-size: 22px
@@ -26,7 +26,22 @@
       font-size: 21px
       text-decoration: underline
       color: $color-primary
-      margin-top: 20px
 
       &:hover
         color: #3342FF
+
+
+@media screen and (min-width: 1440px)
+  .contact-box
+    &__content
+      a
+        margin-top: 20px
+
+    &__vertical-line
+      height: 115px
+
+@media screen and (max-width: 1439px)
+  .contact-box
+    &__content
+      a
+        margin-left: 20px

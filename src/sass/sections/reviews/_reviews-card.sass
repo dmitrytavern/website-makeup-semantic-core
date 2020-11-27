@@ -1,25 +1,22 @@
 .reviews-card
   border: 2px solid #E9F0FF
   border-radius: 20px
+  padding-left: 20px
+  padding-right: 20px
 
   &__inner
     text-align: center
-    padding-top: 40px
-    padding-bottom: 45px
 
   &__img
     display: block
     border-radius: 50%
     width: 100%
     height: 100%
-    max-width: 150px
-    max-height: 150px
     margin: 0 auto
     box-shadow: $box-shadow-15
 
   &__title
     display: block
-    margin-top: 45px
     font-size: 24px
     color: $color-primary
 
@@ -27,6 +24,37 @@
       color: $color-primary
 
   &__description
-    margin-top: 15px
     font-size: 18px
     font-family: 'TTCommons', sans-serif
+
+@media screen and (min-width: 1440px)
+  .reviews-card
+    &__inner
+      padding-top: 40px
+      padding-bottom: 45px
+
+    &__title
+      margin-top: 45px
+
+    &__description
+      margin-top: 15px
+
+    &__img
+      max-width: 150px
+      max-height: 150px
+
+@media screen and (max-width: 1439px)
+  .reviews-card
+    &__inner
+      padding-top: 30px
+      padding-bottom: 15px
+
+    &__title
+      margin-top: 30px
+
+    &__description
+      margin-top: 5px
+
+    &__img
+      max-width: 120px
+      max-height: 120px

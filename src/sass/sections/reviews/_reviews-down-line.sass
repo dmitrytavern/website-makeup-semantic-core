@@ -8,6 +8,8 @@
     transform: translateY(-60%)
 
   &__inner
+    position: relative
+    z-index: 1
     padding: 85px 110px
     display: flex
     align-items: center
@@ -36,3 +38,12 @@
 
     span
       font-family: 'TTCommons DemiBold', sans-serif
+
+@media screen and (min-width: 1440px)
+
+@media screen and (max-width: 1439px)
+  .reviews-down-line
+    &__inner
+      padding-left: 50px
+      padding-right: 50px
+      justify-content: space-between

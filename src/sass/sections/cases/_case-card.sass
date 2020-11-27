@@ -10,9 +10,6 @@
   &__content
     padding-top: 5px
     padding-bottom: 10px
-    border-left: 1px solid #E9F0FF
-    padding-left: 60px
-    margin-left: 50px
     font-family: "TTCommons", sans-serif
 
     &-primary-blcok
@@ -76,3 +73,23 @@
         margin-left: 0
       &:last-child
         margin-right: 0
+
+@media screen and (min-width: 1440px)
+  .case-card
+    &__content
+      border-left: 1px solid #E9F0FF
+      padding-left: 60px
+      margin-left: 50px
+
+    &__image
+      align-self: center
+
+@media screen and (max-width: 1439px)
+  .case-card
+    &__content
+      margin-left: 30px
+
+    &__image
+      max-width: 50%
+      align-self: flex-start
+
