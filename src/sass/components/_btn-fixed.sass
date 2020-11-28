@@ -1,0 +1,60 @@
+.btn-fixed-container
+  position: fixed
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 9
+
+.btn-fixed
+  transition: color .3s, opacity .3s, visibility .3s, background-color .3s
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  position: absolute
+  right: 20px
+  bottom: 80px
+  border-radius: 100px
+  background: #ffffff
+  box-shadow: $box-shadow-20
+
+.btn-up
+  width: 54px
+  height: 54px
+  color: #000
+
+  font-size: 18px
+  cursor: pointer
+
+  opacity: 0
+  visibility: hidden
+
+  &:hover
+    color: #ffffff
+    background: #5864FF
+
+  &.is-active
+    opacity: 1
+    visibility: visible
+
+
+.btn-chat
+  display: none
+  color: $color-primary
+  width: 68px
+  height: 56px
+  font-size: 22px
+  border-bottom-right-radius: 0
+  bottom: 92px
+
+@media screen and (max-width: 991px)
+  .btn-up
+    display: none
+
+  .btn-chat
+    display: flex
+
+@media screen and (max-width: 767px)
+  .btn-chat
+    bottom: 132px
