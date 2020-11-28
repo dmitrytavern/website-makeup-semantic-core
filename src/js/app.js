@@ -25,14 +25,17 @@ $("a[href*='#anchor-']").on('click', function(event) {
 	}
 })
 
-const $pinBlock = $('#prices-pin-block')
-const $pinContainer = $('#prices-pin-container')
 
-//  Header
+//  Scrolling
 
-const $header         = $('header')
+const $header         = $('header.header')
 const $headerMenuBtn  = $('#header-menu-btn')
 const $menu           = $('.menu')
+const $pinBlock       = $('#prices-pin-block')
+const $pinContainer   = $('#prices-pin-container')
+const $footer         = $('footer.footer')
+const $btnChatContainer = $('.btn-fixed-container')
+const $btnChat        = $('.btn-chat')
 
 function scrollPage() {
 	if (window.pageYOffset > 0) {
@@ -45,6 +48,20 @@ function scrollPage() {
 		$(".btn-up").addClass('is-active')
 	} else {
 		$(".btn-up").removeClass('is-active')
+	}
+
+	const footerHeight = $footer.height()
+	const footerTop     = $footer.offset().top
+	const btnChatHeight = $btnChat.height()
+
+	if (footerTop <= window.pageYOffset + window.innerHeight - (btnChatHeight / 2) - 30) {
+		$btnChatContainer.css({ bottom: footerHeight+'px' })
+		$btnChatContainer.addClass('is-absolute')
+		$btnChat.addClass('is-fixed')
+	} else {
+		$btnChatContainer.css({ bottom: '30px' })
+		$btnChatContainer.removeClass('is-absolute')
+		$btnChat.removeClass('is-fixed')
 	}
 
 	const pinContainerTop = $pinContainer.offset().top

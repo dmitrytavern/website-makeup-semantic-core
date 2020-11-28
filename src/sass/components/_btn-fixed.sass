@@ -1,6 +1,6 @@
 .btn-fixed-container
   position: fixed
-  bottom: 0
+  bottom: 80px
   left: 50%
   transform: translateX(-50%)
   z-index: 9
@@ -14,7 +14,7 @@
 
   position: absolute
   right: 20px
-  bottom: 80px
+  bottom: 0
   border-radius: 100px
   background: #ffffff
   box-shadow: $box-shadow-20
@@ -46,15 +46,21 @@
   height: 56px
   font-size: 22px
   border-bottom-right-radius: 0
-  bottom: 92px
+  bottom: 0
+
+  &.is-fixed
+    transform: translateY(50%)
+
 
 @media screen and (max-width: 991px)
+  .btn-fixed-container
+    bottom: 30px
+
+    &.is-absolute
+      position: absolute
+
   .btn-up
     display: none
 
   .btn-chat
     display: flex
-
-@media screen and (max-width: 767px)
-  .btn-chat
-    bottom: 132px
