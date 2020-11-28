@@ -59,14 +59,6 @@
     &-links
       margin-top: 30px
 
-    &-link
-      margin: 0 24px
-
-      &:first-child
-        margin-left: 0
-      &:last-child
-        margin-right: 0
-
 @media screen and (min-width: 1300px)
   .case-card
     &__content
@@ -107,3 +99,31 @@
       margin-top: 15px
       padding-top: 0
       padding-bottom: 0
+
+@media screen and (min-width: 768px)
+  .case-card__content-link
+    margin: 0 24px
+
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+
+@media screen and (max-width: 767px)
+  .case-card__content
+    &-group
+      display: block
+      margin-bottom: 20px
+
+    &-secondary-block
+      display: inline-block
+      margin-bottom: 10px
+
+    &-link
+      display: block
+      margin: 24px 0
+
+      &:first-child
+        margin-top: 0
+      &:last-child
+        margin-bottom: 0

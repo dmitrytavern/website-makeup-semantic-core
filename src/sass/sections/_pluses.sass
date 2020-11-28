@@ -142,8 +142,29 @@
       ul
         display: grid
         grid-template-columns: 1fr 1fr
-        grid-column-gap: 130px
+        grid-column-gap: 18%
         grid-row-gap: 20px
 
       &-rate
         margin-top: 15px
+
+@media screen and (max-width: 991px)
+  .pluses
+    &__prices
+      padding-left: 30px
+      padding-right: 30px
+
+      ul
+        grid-template-columns: 1fr
+
+      &-rate
+        margin-top: 20px
+
+@media screen and (max-width: 767px)
+  .pluses
+    &__title
+      margin-bottom: 60px
+
+    &__dot-center
+      left: unset
+      right: 0

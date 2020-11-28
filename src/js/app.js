@@ -110,28 +110,40 @@ function activateMobileSliders() {
 
 		new Swiper('.webinar__slider.swiper-container', {
 			loop: false,
-			slidesPerView: 2.1,
-			spaceBetween: 50,
+			slidesPerView: 1,
+			spaceBetween: 24,
 			pagination: {
 				el: '.slider__pagination',
 				bulletClass: 'slider__bullet',
 				bulletActiveClass: 'is-active',
 				clickable: true
 			},
+			breakpoints: {
+				767: {
+					slidesPerView: 2,
+					spaceBetween: 40,
+				}
+			}
 		}),
 
 		new Swiper('.reviews__slider.swiper-container', {
 			loop: false,
 			observer: true,
 			observeParents: true,
-			slidesPerView: 2,
-			spaceBetween: 40,
+			slidesPerView: 1,
+			spaceBetween: 24,
 			pagination: {
 				el: '.slider__pagination',
 				bulletClass: 'slider__bullet',
 				bulletActiveClass: 'is-active',
 				clickable: true
 			},
+			breakpoints: {
+				767: {
+					slidesPerView: 2,
+					spaceBetween: 40,
+				}
+			}
 		}),
 	]
 }
@@ -139,7 +151,6 @@ function activateMobileSliders() {
 function deactivateMobileSliders() {
 	if (mobileSlidersActive && mobileSliders) {
 		mobileSliders.map(x => {
-			console.log(typeof x, x)
 			if (Array.isArray(x)) {
 				x.map(x => x.destroy())
 			} else {
@@ -186,11 +197,11 @@ $(window).on('load resize', checkMobileSliders)
 
 // Collapses
 
-$('.question__answer, .prices-list__content').on('show.bs.collapse', function () {
+$('.question__answer, .collapse-list__content').on('show.bs.collapse', function () {
 	$(this).parent().addClass('is-active');
 });
 
-$('.question__answer, .prices-list__content').on('hide.bs.collapse', function () {
+$('.question__answer, .collapse-list__content').on('hide.bs.collapse', function () {
 	$(this).parent().removeClass('is-active');
 });
 

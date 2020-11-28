@@ -41,8 +41,6 @@
     box-shadow: $box-shadow-15
     border-radius: 20px
 
-@import "cases/case-card"
-
 @media screen and (max-width: 1299px)
   .cases
     &__case
@@ -67,3 +65,10 @@
 
     &__slider-arrows
       display: none
+
+@media screen and (max-width: 767px)
+  .cases__container
+    padding-left: 0
+    padding-right: 0
+
+@import "cases/case-card"

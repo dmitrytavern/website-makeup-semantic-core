@@ -1,11 +1,11 @@
 @media screen and (min-width: 992px)
-  .prices-list
+  .collapse-list
     &__front
       i
         display: none
 
 @media screen and (max-width: 991px)
-  .prices-list
+  .collapse-list
     &__inner
       background: #E9F0FF
       border-radius: 7px
@@ -31,12 +31,28 @@
       i
         transition: transform .3s
         font-size: 14px
+        margin-left: 5px
 
       &:not(.collapsed)
         i
           transform: rotate(180deg)
 
+    &__title-icon
+      display: flex
+      align-items: center
+
+      svg
+        display: block
+        max-width: 32px
+        max-height: 28px
+        margin-right: 18px
+
     &__content
       transition: .3s
       padding-left: 25px
       padding-right: 25px
+
+@media screen and (max-width: 767px)
+  .collapse-list__front
+    padding-left: 20px
+    padding-right: 20px

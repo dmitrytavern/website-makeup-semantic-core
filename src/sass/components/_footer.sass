@@ -36,3 +36,51 @@
 
   &__developed-link
     color: $color-primary
+
+@media screen and (max-width: 991px)
+  .footer
+
+    &__inner
+      padding-top: 40px
+      width: 100%
+      display: grid
+      grid-template-columns: auto 1fr
+      grid-column-gap: 30px
+      grid-row-gap: 10px
+
+    &__paymethods
+      justify-content: flex-end
+      grid-column: 2
+      grid-row: 1/3
+
+      li
+        margin: 0 10px
+
+      img
+        width: 70px
+        max-height: 22px
+
+      svg
+        width: 79px
+        max-width: 80px
+        max-height: 22px
+
+    &__paymethod
+      &-webmoney svg
+        width: 79px
+      &-yandex svg
+        width: 58px
+      &-payoneer svg
+        width: 60px
+
+@media screen and (max-width: 767px)
+  .footer
+    &__inner
+      grid-template-columns: 1fr
+      grid-column-gap: 20px
+
+    &__paymethods
+      padding-top: 10px
+      justify-content: flex-start
+      grid-column: 1
+      grid-row: 3

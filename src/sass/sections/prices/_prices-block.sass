@@ -61,7 +61,6 @@
 
     &:last-child
       margin-bottom: 0
-      padding-bottom: 43px
 
   &__button
     transform: translateY(50%)
@@ -77,6 +76,9 @@
     &__list
       margin-top: 8px
 
+    &__include-list:last-child
+        padding-bottom: 43px
+
 @media screen and (max-width: 991px)
   .prices-block__include-list
     font-size: 18px
@@ -87,3 +89,19 @@
 
     &__button-link
       margin-top: 30px
+
+
+@media screen and (max-width: 767px)
+  .prices-block__subtitle
+    text-align: left
+    margin-bottom: 30px
+
+  .prices-block__include-list
+    padding: 0
+
+    &,
+    &.is-darker
+      background: transparent
+
+    &:last-child
+      padding-bottom: 0

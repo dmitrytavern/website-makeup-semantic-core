@@ -10,8 +10,6 @@
     grid-column-gap: 40px
     grid-row-gap: 30px
 
-@import "questions/question"
-
 @media screen and (min-width: 1300px)
   .questions__grid
     padding-left: 85px
@@ -30,3 +28,9 @@
 
     &__title
       margin-bottom: 80px
+
+@media screen and (max-width: 767px)
+  .questions__grid
+    grid-row-gap: 20px
+
+@import "questions/question"

@@ -28,21 +28,45 @@ section.prices
                 #prices-pin-block.prices__fixed-block
                     h5.prices-block__subtitle Оба Тарифа Включают:
 
-                    ul.prices-block__include-list.is-darker.list
-                        li Все запросы по теме статьи;
-                        li С кластеризацией и чисткой;
-                        li Данные: Ahrefs, Semrush, Keywordstool.
+                    .collapse-list.prices__list
+                        .prices__list-inner.collapse-list__inner
+                            .prices__list-title.collapse-list__front.collapsed.collapsed-md-hidden( data-toggle="collapse" data-target="#prices-1" )
+                                .collapse-list__title-icon
+                                    svg
+                                        use( xlink:href="" )
 
-                    ul.prices-block__include-list.list
-                        li Рекомендуемый заголовок;
-                        li Оптимальный объем текста;
-                        li Коэффициент важности ключей;
-                        li Мета-теги;
-                        li LSI-слова;
-                        li Структура каждой статьи;
-                        li Подзаголовки (h1-h4);
-                        li Советы для статьи;
-                        li Перелинковка (от 50шт) шл.
+                                    span Ключи
+
+                                i.icon-down-arrow
+
+                            .prices__list-content.collapse-list__content.collapse.collapse-md-hidden#prices-1
+                                ul.prices-block__include-list.is-darker.list.prices-list
+                                    li Все запросы по теме статьи;
+                                    li С кластеризацией и чисткой;
+                                    li Данные: Ahrefs, Semrush, Keywordstool.
+
+                    .collapse-list.prices__list
+                        .prices__list-inner.collapse-list__inner
+                            .prices__list-title.collapse-list__front.collapsed.collapsed-md-hidden( data-toggle="collapse" data-target="#prices-2" )
+                                .collapse-list__title-icon
+                                    svg
+                                        use( xlink:href="" )
+
+                                    span ТЗ
+
+                                i.icon-down-arrow
+
+                            .prices__list-content.collapse-list__content.collapse.collapse-md-hidden#prices-2
+                                ul.prices-block__include-list.list
+                                    li Рекомендуемый заголовок;
+                                    li Оптимальный объем текста;
+                                    li Коэффициент важности ключей;
+                                    li Мета-теги;
+                                    li LSI-слова;
+                                    li Структура каждой статьи;
+                                    li Подзаголовки (h1-h4);
+                                    li Советы для статьи;
+                                    li Перелинковка (от 50шт) шл.
 
             .prices-block
                 .prices-block__inner
@@ -80,7 +104,7 @@ section.prices
                     span.line
                     span Гемблинг
 
-                li.prices-areas__area
+                li.prices-areas__area.prices-areas__area-business
                     svg
                         use( xlink:href=sprite('icon-business') )
                     span.line
