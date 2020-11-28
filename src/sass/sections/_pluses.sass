@@ -45,18 +45,9 @@
       display: flex
       align-items: center
       line-height: normal
-      margin: 20px 0
 
       span
         margin-top: 3px
-
-      &:before
-        content: unset
-
-      &:first-child
-        margin-top: 0
-      &:last-child
-        margin-bottom: 0
 
     &-icon
       padding: 10px 6px
@@ -86,6 +77,7 @@
       top: 0
       transform: translateY(-30%)
 
+
 @media screen and (max-width: 1299px)
   .pluses
     overflow: hidden
@@ -108,3 +100,50 @@
 
       display: flex
       align-items: center
+
+
+@media screen and (min-width: 992px)
+  .pluses__prices li
+    margin: 20px 0
+
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
+
+@media screen and (max-width: 991px)
+  .pluses
+    margin-top: 100px
+
+    &__inner
+      padding-top: 65px
+      padding-bottom: 45px
+
+    &__dot-prices
+      display: none
+
+    &__dot-center
+      top: 160px
+
+    &__title
+      margin-bottom: 70px
+
+    &__grid
+      display: block
+      padding-left: 0
+      padding-right: 0
+
+    &__prices
+      width: 100%
+      padding: 30px 65px 20px
+      margin-top: 25px
+      margin-bottom: 25px
+
+      ul
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 130px
+        grid-row-gap: 20px
+
+      &-rate
+        margin-top: 15px

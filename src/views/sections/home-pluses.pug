@@ -8,13 +8,19 @@ section.pluses
 
             .pluses__grid
                 div.pluses__text-column
-                    .section-subtitle-2 Доверяя запросы и тексты нам, вы получаете:
 
-                    ul.pluses__list.list
-                        li Лучшую интеграцию семантики в текст;
-                        li Копирайтеров, отлично работающих с СЯ;
-                        li Экономию времени и контроль качества;
-                        li Вычитку текстов нашим редактором.
+                    .prices-list
+                        .prices-list__inner
+                            .prices-list__front.collapsed.collapsed-lg-hidden( data-toggle="collapse" data-target="#pluses-1" )
+                                .section-subtitle-2 Доверяя запросы и тексты нам, вы получаете:
+                                i.icon-down-arrow
+
+                            .prices-list__content.collapse.collapse-lg-hidden#pluses-1
+                                ul.pluses__list.list
+                                    li Лучшую интеграцию семантики в текст;
+                                    li Копирайтеров, отлично работающих с СЯ;
+                                    li Экономию времени и контроль качества;
+                                    li Вычитку текстов нашим редактором.
 
                 div.pluses__prices-column
                     img( src=require('../../img/decor-2.png') ).dot.dot-2.pluses__dot-prices
@@ -47,10 +53,15 @@ section.pluses
                         i.pluses__prices-rate за 1000 символов.
 
                 div.pluses__text-column
-                    .section-subtitle-2 Избавляетесь от таких хлопот как:
+                    .prices-list
+                        .prices-list__inner
+                            .prices-list__front.collapsed.collapsed-lg-hidden( data-toggle="collapse" data-target="#pluses-2" )
+                                .section-subtitle-2 Избавляетесь от таких хлопот как:
+                                i.icon-down-arrow
 
-                    ul.pluses__list.list
-                        li По поиску и выбору копирайтеров;
-                        li По обучению их работе с ядром;
-                        li Не тратите время на общение с копирайтерами;
-                        li Не тратите время на правки и доработки текстов.
+                            .prices-list__content.collapse.collapse-lg-hidden#pluses-2
+                                ul.pluses__list.list
+                                    li По поиску и выбору копирайтеров;
+                                    li По обучению их работе с ядром;
+                                    li Не тратите время на общение с копирайтерами;
+                                    li Не тратите время на правки и доработки текстов.

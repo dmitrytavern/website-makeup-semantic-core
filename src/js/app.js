@@ -51,7 +51,6 @@ function scrollPage() {
 	const pinContainerHeight = $pinContainer.height()
 	const pinEnd = pinContainerTop + pinContainerHeight - $pinBlock.height() - $header.height() - 40
 
-	console.log(window.pageYOffset, pinEnd, pinContainerTop, pinContainerHeight, $pinBlock.height())
 
 	if (window.pageYOffset >= pinContainerTop - $header.height() - 40) {
 		if (window.pageYOffset >= pinEnd) {
@@ -61,7 +60,7 @@ function scrollPage() {
 		} else {
 			$pinBlock.addClass('is-fixed')
 			$pinBlock.removeClass('is-fixed-bottom')
-			$pinBlock.css({ top: $header.height() + 40 })
+			$pinBlock.css({ top: window.pageYOffset - pinContainerTop + $header.height() + 40 })
 		}
 	} else {
 		$pinBlock.removeClass('is-fixed')
@@ -89,8 +88,45 @@ scrollPage()
 
 
 // Sliders
+let mobileSliders = null
+let mobileSlidersActive = false
 
-new Swiper('.swiper-container', {
+function activateMobileSliders() {
+	if (mobileSlidersActive) return
+	console.log(mobileSlidersActive)
+	mobileSlidersActive = true
+	mobileSliders = new Swiper('.videos-box__list-container.swiper-container', {
+		loop: false,
+		slidesPerView: 1,
+		spaceBetween: 30,
+		pagination: {
+			el: '.slider__pagination',
+			bulletClass: 'slider__bullet',
+			bulletActiveClass: 'is-active',
+			clickable: true
+		},
+	})
+}
+
+function deactivateMobileSliders() {
+	if (mobileSlidersActive && mobileSliders) {
+		mobileSliders.destroy()
+		mobileSliders = null
+		mobileSlidersActive = false
+	}
+}
+
+function checkMobileSliders() {
+	if (window.innerWidth < 992) {
+		// Activate
+		activateMobileSliders()
+	} else {
+		// Deactivate
+		deactivateMobileSliders()
+	}
+}
+
+new Swiper('.cases__slider', {
 	loop: false,
 	effect: 'fade',
 	fadeEffect: {
@@ -110,14 +146,16 @@ new Swiper('.swiper-container', {
 	},
 })
 
+$(window).on('load resize', checkMobileSliders)
+
 
 // Collapses
 
-$('.question__answer').on('show.bs.collapse', function () {
+$('.question__answer, .prices-list__content').on('show.bs.collapse', function () {
 	$(this).parent().addClass('is-active');
 });
 
-$('.question__answer').on('hide.bs.collapse', function () {
+$('.question__answer, .prices-list__content').on('hide.bs.collapse', function () {
 	$(this).parent().removeClass('is-active');
 });
 

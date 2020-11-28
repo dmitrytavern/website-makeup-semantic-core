@@ -3,9 +3,6 @@
   align-items: center
   justify-content: space-between
 
-  li:before
-    content: unset
-
   &__title
     line-height: 44px
     width: 100%
@@ -51,3 +48,12 @@
     &__list
       width: 100%
       grid-column-gap: 2%
+
+@media screen and (max-width: 991px)
+  .prices-areas
+    &__list
+      grid-column-gap: 5%
+
+    &__title
+      margin-bottom: 50px
+

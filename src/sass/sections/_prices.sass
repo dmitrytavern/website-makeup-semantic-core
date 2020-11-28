@@ -1,9 +1,6 @@
 .prices
   margin-top: 150px
 
-  li
-    font-family: 'TTCommons', sans-serif
-
   &__title
     margin-bottom: 90px
 
@@ -12,14 +9,14 @@
     grid-template-columns: 35% calc(30% - 40px) 35%
     grid-column-gap: 20px
 
+    li
+      font-family: 'TTCommons', sans-serif
+
     > div
       position: relative
 
   &__areas
     margin-top: 200px
-
-@import "prices/prices-block"
-@import "prices/prices-areas"
 
 @media screen and (max-width: 1299px)
   .prices__grid
@@ -37,11 +34,28 @@
     position: absolute
     top: 0
 
-    &.is-fixed
-      position: fixed
-      top: 50px
-
     &.is-fixed-bottom
       position: absolute
       bottom: 0
       top: unset
+
+@media screen and (max-width: 991px)
+  .prices
+    margin-top: 120px
+
+    &__title
+      margin-bottom: 80px
+
+    &__grid
+      grid-template-columns: 60.7% calc(39.6% - 25px)
+      grid-column-gap: 25px
+      padding-left: 0
+      padding-right: 0
+
+    &__areas
+      margin-top: 150px
+
+
+@import "prices/prices-block"
+@import "prices/prices-areas"
+@import "prices/prices-list"

@@ -1,0 +1,42 @@
+@media screen and (min-width: 992px)
+  .prices-list
+    &__front
+      i
+        display: none
+
+@media screen and (max-width: 991px)
+  .prices-list
+    &__inner
+      background: #E9F0FF
+      border-radius: 7px
+      transition: padding-bottom .3s
+      border: 1px solid rgba($color-primary, 0)
+
+      &.is-active
+        border-color: $color-primary
+        padding-bottom: 30px
+
+    &__front
+      display: flex
+      align-items: center
+      justify-content: space-between
+      cursor: pointer
+      padding: 25px
+
+      .section-subtitle-2
+        font-family: 'TTCommons Medium', sans-serif
+        font-size: 18px
+        line-height: 20px
+
+      i
+        transition: transform .3s
+        font-size: 14px
+
+      &:not(.collapsed)
+        i
+          transform: rotate(180deg)
+
+    &__content
+      transition: .3s
+      padding-left: 25px
+      padding-right: 25px

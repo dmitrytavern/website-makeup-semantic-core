@@ -23,12 +23,51 @@
     display: flex
     align-items: center
 
-  &__logo
-
-    svg
+  &__logo svg
       max-width: 238px
       max-height: 39px
       display: block
+
+  &__menu
+    transition: background .3s
+    position: relative
+    width: 52px
+    height: 38px
+    background: #E9F0FF
+    border-radius: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    cursor: pointer
+
+    span
+      transition: transform .3s, opacity .3s
+      position: absolute
+      top: 50%
+      width: 18px
+      height: 2px
+      background: $color-primary
+
+    span:first-child
+      transform: translateY(-8px)
+
+    span:nth-child(2)
+      width: 22px
+      transform: translateY(-1px)
+
+    span:last-child
+      transform: translateY(6px)
+
+    &.is-active
+      span
+        &:first-child
+          transform: translateY(-1px) rotate(45deg)
+        &:nth-child(2)
+          opacity: 0
+        &:last-child
+          transform: translateY(-1px) rotate(-45deg)
 
   &__navigation
     margin-right: 50px
@@ -63,3 +102,12 @@
 
     .header__inner
       padding: 20px 0
+
+@media screen and (min-width: 992px)
+  .header__menu
+    display: none
+
+@media screen and (max-width: 991px)
+  .header
+    &__navigation
+      display: none
