@@ -50,24 +50,25 @@ function scrollPage() {
 		$(".btn-up").removeClass('is-active')
 	}
 
-	const footerHeight = $footer.height()
-	const footerTop     = $footer.offset().top
-	const btnChatHeight = $btnChat.height()
+	if (window.innerWidth < 992) {
+		const footerHeight = $footer.height()
+		const footerTop     = $footer.offset().top
+		const btnChatHeight = $btnChat.height()
 
-	if (footerTop <= window.pageYOffset + window.innerHeight - (btnChatHeight / 2) - 30) {
-		$btnChatContainer.css({ bottom: footerHeight+'px' })
-		$btnChatContainer.addClass('is-absolute')
-		$btnChat.addClass('is-fixed')
-	} else {
-		$btnChatContainer.css({ bottom: '30px' })
-		$btnChatContainer.removeClass('is-absolute')
-		$btnChat.removeClass('is-fixed')
+		if (footerTop <= window.pageYOffset + window.innerHeight - (btnChatHeight / 2) - 30) {
+			$btnChatContainer.css({ bottom: footerHeight+'px' })
+			$btnChatContainer.addClass('is-absolute')
+			$btnChat.addClass('is-fixed')
+		} else {
+			$btnChatContainer.css({ bottom: '30px' })
+			$btnChatContainer.removeClass('is-absolute')
+			$btnChat.removeClass('is-fixed')
+		}
 	}
 
 	const pinContainerTop = $pinContainer.offset().top
 	const pinContainerHeight = $pinContainer.height()
 	const pinEnd = pinContainerTop + pinContainerHeight - $pinBlock.height() - $header.height() - 40
-
 
 	if (window.pageYOffset >= pinContainerTop - $header.height() - 40) {
 		if (window.pageYOffset >= pinEnd) {
