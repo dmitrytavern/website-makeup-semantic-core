@@ -2,8 +2,12 @@
   display: flex
 
   &__list
+    box-sizing: border-box
     display: grid
     grid-template-columns: 1fr 1fr 1fr
+
+  &__list-container
+    overflow: unset
 
 @media screen and (min-width: 1300px)
   .videos-box
@@ -20,7 +24,7 @@
     flex-direction: column
 
     &__list
-      grid-column-gap: 95px
+      grid-column-gap: 10%
       padding-left: 30px
       padding-right: 30px
 
@@ -43,7 +47,6 @@
 
     &__list-container
       width: 100%
-      overflow: unset
 
     &__list
       display: grid

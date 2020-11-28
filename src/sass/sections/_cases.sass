@@ -45,9 +45,25 @@
 
 @media screen and (max-width: 1299px)
   .cases
-    &__inner
-      padding-left: 50px
-      padding-right: 50px
-
     &__case
       padding: 45px 20px 40px 40px
+
+@media screen and (min-width: 991px) and (max-width: 1299px)
+  .cases__inner
+    padding-left: 50px
+    padding-right: 50px
+
+@media screen and (max-width: 991px)
+  .cases
+    &__dot-right
+      display: none
+
+    &__dot-left
+      top: 0
+      left: 6%
+
+    &__inner
+      padding-top: 65px
+
+    &__slider-arrows
+      display: none

@@ -11,156 +11,166 @@ section.reviews
                 li <a data-toggle="tab" href="#tab-blogger" class="btn btn-primary-tab">Блогеры</a>
 
             .tab-content.reviews__tab-content-box
-                .tab-pane.reviews__tab-content.fade.active.show#tab-companies
+                .tab-pane.fade.active.show#tab-companies
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/company-aval.jpg') ).reviews-card__img
-                            a( href="https://alaev.info/" target="_blank" rel="nofollow" ).reviews-card__title Банк Аваль
-                            .reviews-card__description Райффайзен Банк Аваль Украина
+                    .swiper-container.reviews__slider
+                        .reviews__tab-content.swiper-wrapper
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/company-aval.jpg') ).reviews-card__img
+                                    a( href="https://alaev.info/" target="_blank" rel="nofollow" ).reviews-card__title Банк Аваль
+                                    .reviews-card__description Райффайзен Банк Аваль Украина
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/company-lpmotor.jpg') ).reviews-card__img
-                            a( href="http://www.lpmotor.ru/" target="_blank" rel="nofollow" ).reviews-card__title LP Motor
-                            .reviews-card__description Ведущий сервис по созданию лендингов
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/company-lpmotor.jpg') ).reviews-card__img
+                                    a( href="http://www.lpmotor.ru/" target="_blank" rel="nofollow" ).reviews-card__title LP Motor
+                                    .reviews-card__description Ведущий сервис по созданию лендингов
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/company-nmarket.jpg') ).reviews-card__img
-                            a( href="http://www.nmarket.ru/" target="_blank" rel="nofollow" ).reviews-card__title НМаркет
-                            .reviews-card__description Строительная компания в СПБ
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/company-nmarket.jpg') ).reviews-card__img
+                                    a( href="http://www.nmarket.ru/" target="_blank" rel="nofollow" ).reviews-card__title НМаркет
+                                    .reviews-card__description Строительная компания в СПБ
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/company-alliance.jpg') ).reviews-card__img
-                            a( href="http://www.esteticalliance.ru/" target="_blank" rel="nofollow" ).reviews-card__title ЭстэтикАльянс
-                            .reviews-card__description Центр эстетической медицины
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/company-alliance.jpg') ).reviews-card__img
+                                    a( href="http://www.esteticalliance.ru/" target="_blank" rel="nofollow" ).reviews-card__title ЭстэтикАльянс
+                                    .reviews-card__description Центр эстетической медицины
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/company-ppt.jpg') ).reviews-card__img
-                            a( href="http://www.ppt.ru/" target="_blank" rel="nofollow" ).reviews-card__title PPT
-                            .reviews-card__description Петербургский правовой портал
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/company-ppt.jpg') ).reviews-card__img
+                                    a( href="http://www.ppt.ru/" target="_blank" rel="nofollow" ).reviews-card__title PPT
+                                    .reviews-card__description Петербургский правовой портал
 
+                        .slider__pagination.reviews__slider-pagination
 
-                .tab-pane.reviews__tab-content.fade#tab-shops
+                .tab-pane.fade#tab-shops
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/shop-unizoo.jpg') ).reviews-card__img
-                            a( href="http://www.unizoo.ru/" target="_blank" rel="nofollow" ).reviews-card__title ЮниЗоо
-                            .reviews-card__description Магазин зоотоваров
+                    .swiper-container.reviews__slider
+                        .reviews__tab-content.swiper-wrapper
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/shop-unizoo.jpg') ).reviews-card__img
+                                    a( href="http://www.unizoo.ru/" target="_blank" rel="nofollow" ).reviews-card__title ЮниЗоо
+                                    .reviews-card__description Магазин зоотоваров
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/shop-zakazaka.jpg') ).reviews-card__img
-                            a( href="http://www.zakazaka.ru/" target="_blank" rel="nofollow" ).reviews-card__title ZakaZaka
-                            .reviews-card__description Сервис доставки еды
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/shop-zakazaka.jpg') ).reviews-card__img
+                                    a( href="http://www.zakazaka.ru/" target="_blank" rel="nofollow" ).reviews-card__title ZakaZaka
+                                    .reviews-card__description Сервис доставки еды
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/shop-megamind.jpg') ).reviews-card__img
-                            a( href="http://www.megamind.ru/" target="_blank" rel="nofollow" ).reviews-card__title Megamind
-                            .reviews-card__description Магазин оригинальных подарков
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/shop-megamind.jpg') ).reviews-card__img
+                                    a( href="http://www.megamind.ru/" target="_blank" rel="nofollow" ).reviews-card__title Megamind
+                                    .reviews-card__description Магазин оригинальных подарков
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/shop-bioman.jpg') ).reviews-card__img
-                            a( href="http://www.bioman.ru/" target="_blank" rel="nofollow" ).reviews-card__title Bioman
-                            .reviews-card__description Магазин спортивного питания
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/shop-bioman.jpg') ).reviews-card__img
+                                    a( href="http://www.bioman.ru/" target="_blank" rel="nofollow" ).reviews-card__title Bioman
+                                    .reviews-card__description Магазин спортивного питания
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/shop-tattoomall.jpg') ).reviews-card__img
-                            a( href="http://www.tattoomall.ru/" target="_blank" rel="nofollow" ).reviews-card__title Tattoomall.ru
-                            .reviews-card__description Поставщик тату-оборудования
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/shop-tattoomall.jpg') ).reviews-card__img
+                                    a( href="http://www.tattoomall.ru/" target="_blank" rel="nofollow" ).reviews-card__title Tattoomall.ru
+                                    .reviews-card__description Поставщик тату-оборудования
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/shop-iqbaby.jpg') ).reviews-card__img
-                            a( href="http://www.iqbaby.ru/" target="_blank" rel="nofollow" ).reviews-card__title IQ Baby
-                            .reviews-card__description Магазин детских товаров
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/shop-iqbaby.jpg') ).reviews-card__img
+                                    a( href="http://www.iqbaby.ru/" target="_blank" rel="nofollow" ).reviews-card__title IQ Baby
+                                    .reviews-card__description Магазин детских товаров`
 
+                        .slider__pagination.reviews__slider-pagination
 
+                .tab-pane.fade#tab-entrepreneurs
 
-                .tab-pane.reviews__tab-content.fade#tab-entrepreneurs
+                    .swiper-container.reviews__slider
+                        .reviews__tab-content.swiper-wrapper
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/entrepreneurs-turevski-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.dialog-of-cultures.com/" target="_blank" rel="nofollow" ).reviews-card__title Марк Туревский
+                                    .reviews-card__description Президент Международной Академии Лидерства в Бизнесе и Администрации
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/entrepreneurs-turevski-ava.jpg') ).reviews-card__img
-                            a( href="http://www.dialog-of-cultures.com/" target="_blank" rel="nofollow" ).reviews-card__title Марк Туревский
-                            .reviews-card__description Президент Международной Академии Лидерства в Бизнесе и Администрации
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/entrepreneurs-danilov-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.facebook.com/odanilov" target="_blank" rel="nofollow" ).reviews-card__title Олег Данилов
+                                    .reviews-card__description Руководитель отдела развития бизнеса в Mail.Ru Group
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/entrepreneurs-danilov-ava.jpg') ).reviews-card__img
-                            a( href="http://www.facebook.com/odanilov" target="_blank" rel="nofollow" ).reviews-card__title Олег Данилов
-                            .reviews-card__description Руководитель отдела развития бизнеса в Mail.Ru Group
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/entrepreneurs-struve-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.centerstruve.com/" target="_blank" rel="nofollow" ).reviews-card__title Мария Струве
+                                    .reviews-card__description Вокальный педагог Первого канала
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/entrepreneurs-struve-ava.jpg') ).reviews-card__img
-                            a( href="http://www.centerstruve.com/" target="_blank" rel="nofollow" ).reviews-card__title Мария Струве
-                            .reviews-card__description Вокальный педагог Первого канала
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/entrepreneurs-alaev-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.alaev.info/" target="_blank" rel="nofollow" ).reviews-card__title Александр Алаев
+                                    .reviews-card__description Директор веб-студии
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/entrepreneurs-alaev-ava.jpg') ).reviews-card__img
-                            a( href="http://www.alaev.info/" target="_blank" rel="nofollow" ).reviews-card__title Александр Алаев
-                            .reviews-card__description Директор веб-студии
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/entrepreneurs-shvets-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.shvets.net/" target="_blank" rel="nofollow" ).reviews-card__title Сергей Швец
+                                    .reviews-card__description Владелец веб-студии
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/entrepreneurs-shvets-ava.jpg') ).reviews-card__img
-                            a( href="http://www.shvets.net/" target="_blank" rel="nofollow" ).reviews-card__title Сергей Швец
-                            .reviews-card__description Владелец веб-студии
-
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/entrepreneurs-viktor-ava.jpg') ).reviews-card__img
-                            a( href="https://webformyself.com/" target="_blank" rel="nofollow" ).reviews-card__title Виктор Рог
-                            .reviews-card__description Основатель центра обучения Webformyself
-
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/entrepreneurs-viktor-ava.jpg') ).reviews-card__img
+                                    a( href="https://webformyself.com/" target="_blank" rel="nofollow" ).reviews-card__title Виктор Рог
+                                    .reviews-card__description Основатель центра обучения Webformyself
+                        .slider__pagination.reviews__slider-pagination
 
                 .tab-pane.reviews__tab-content.fade#tab-blogger
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/blogger-shahov-ava.jpg') ).reviews-card__img
-                            a( href="http://www.bablorub.blogspot.com/" target="_blank" rel="nofollow" ).reviews-card__title Дмитрий Шахов
-                            .reviews-card__description Владелец студии Ремарка, автор блога баблоруб.
+                    .swiper-container.reviews__slider
+                        .reviews__tab-content.swiper-wrapper
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/blogger-shahov-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.bablorub.blogspot.com/" target="_blank" rel="nofollow" ).reviews-card__title Дмитрий Шахов
+                                    .reviews-card__description Владелец студии Ремарка, автор блога баблоруб.
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/blogger-sahnick-ava.jpg') ).reviews-card__img
-                            a( href="http://www.wildo.ru/" target="_blank" rel="nofollow" ).reviews-card__title Вадим Сахник
-                            .reviews-card__description Автор блога Wildo
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/blogger-sahnick-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.wildo.ru/" target="_blank" rel="nofollow" ).reviews-card__title Вадим Сахник
+                                    .reviews-card__description Автор блога Wildo
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/blogger-koksharov-ava.jpg') ).reviews-card__img
-                            a( href="http://www.devaka.ru/" target="_blank" rel="nofollow" ).reviews-card__title Сергей Кокшаров
-                            .reviews-card__description Автор блога Devaka
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/blogger-koksharov-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.devaka.ru/" target="_blank" rel="nofollow" ).reviews-card__title Сергей Кокшаров
+                                    .reviews-card__description Автор блога Devaka
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/blogger-shakin-ava.jpg') ).reviews-card__img
-                            a( href="http://www.devaka.ru/" target="_blank" rel="nofollow" ).reviews-card__title Михаил Шакин
-                            .reviews-card__description Автор блога Shakin
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/blogger-shakin-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.devaka.ru/" target="_blank" rel="nofollow" ).reviews-card__title Михаил Шакин
+                                    .reviews-card__description Автор блога Shakin
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/blogger-petrakov-ava.jpg') ).reviews-card__img
-                            a( href="http://www.freshlife28.ru/" target="_blank" rel="nofollow" ).reviews-card__title Антон Петряков
-                            .reviews-card__description Автор видеоблога
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/blogger-petrakov-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.freshlife28.ru/" target="_blank" rel="nofollow" ).reviews-card__title Антон Петряков
+                                    .reviews-card__description Автор видеоблога
 
-                    .reviews__card.reviews-card
-                        .reviews-card__inner
-                            img( src=require('../../img/reviews/blogger-terehoff-ava.jpg') ).reviews-card__img
-                            a( href="http://www.terehoff.com/" target="_blank" rel="nofollow" ).reviews-card__title Алексей Терехов
-                            .reviews-card__description Автор блога Terehoff
+                            .reviews-card.swiper-slide
+                                .reviews-card__inner
+                                    img( src=require('../../img/reviews/blogger-terehoff-ava.jpg') ).reviews-card__img
+                                    a( href="http://www.terehoff.com/" target="_blank" rel="nofollow" ).reviews-card__title Алексей Терехов
+                                    .reviews-card__description Автор блога Terehoff
 
+                        .slider__pagination.reviews__slider-pagination
 
     .reviews__down-line.reviews-down-line
         img( src=require('../../img/decor-3.png') ).dot.dot-3.reviews-down-line__dot-right

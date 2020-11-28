@@ -4,10 +4,7 @@
   margin-top: 150px
 
   &__image-column img
-    max-width: calc(100% + 44px)
     display: block
-    margin-left: -22px
-    margin-right: -22px
 
   &__background
     position: absolute
@@ -79,3 +76,26 @@
 
       .mb-45
         margin-bottom: 35px
+
+@media screen and (min-width: 992px)
+  .cooperation
+    &__image-column img
+      max-width: calc(100% + 44px)
+      margin-left: -22px
+      margin-right: -22px
+
+@media screen and (max-width: 991px)
+  .cooperation
+    margin-top: 100px
+
+    &__title
+      margin-bottom: 80px
+
+    &__button
+      margin-top: 65px
+
+    &__content
+      text-align: center
+
+      &-description
+        text-align: left

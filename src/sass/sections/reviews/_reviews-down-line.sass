@@ -39,11 +39,24 @@
     span
       font-family: 'TTCommons DemiBold', sans-serif
 
-@media screen and (min-width: 1300px)
-
 @media screen and (max-width: 1299px)
   .reviews-down-line
     &__inner
       padding-left: 50px
       padding-right: 50px
       justify-content: space-between
+
+@media screen and (max-width: 991px)
+  .reviews-down-line
+    &__dot-right
+      transform: translateY(-30%)
+
+    &__buttons
+      justify-content: center
+      margin-top: 40px
+
+    &__inner
+      display: block
+      text-align: center
+      padding-top: 55px
+      padding-bottom: 50px

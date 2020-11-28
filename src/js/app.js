@@ -88,30 +88,65 @@ scrollPage()
 
 
 // Sliders
-let mobileSliders = null
+let mobileSliders = []
 let mobileSlidersActive = false
 
 function activateMobileSliders() {
 	if (mobileSlidersActive) return
-	console.log(mobileSlidersActive)
+
 	mobileSlidersActive = true
-	mobileSliders = new Swiper('.videos-box__list-container.swiper-container', {
-		loop: false,
-		slidesPerView: 1,
-		spaceBetween: 30,
-		pagination: {
-			el: '.slider__pagination',
-			bulletClass: 'slider__bullet',
-			bulletActiveClass: 'is-active',
-			clickable: true
-		},
-	})
+	mobileSliders = [
+		new Swiper('.process__slider.swiper-container', {
+			loop: false,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			pagination: {
+				el: '.slider__pagination',
+				bulletClass: 'slider__bullet',
+				bulletActiveClass: 'is-active',
+				clickable: true
+			},
+		}),
+
+		new Swiper('.webinar__slider.swiper-container', {
+			loop: false,
+			slidesPerView: 2.1,
+			spaceBetween: 50,
+			pagination: {
+				el: '.slider__pagination',
+				bulletClass: 'slider__bullet',
+				bulletActiveClass: 'is-active',
+				clickable: true
+			},
+		}),
+
+		new Swiper('.reviews__slider.swiper-container', {
+			loop: false,
+			observer: true,
+			observeParents: true,
+			slidesPerView: 2,
+			spaceBetween: 40,
+			pagination: {
+				el: '.slider__pagination',
+				bulletClass: 'slider__bullet',
+				bulletActiveClass: 'is-active',
+				clickable: true
+			},
+		}),
+	]
 }
 
 function deactivateMobileSliders() {
 	if (mobileSlidersActive && mobileSliders) {
-		mobileSliders.destroy()
-		mobileSliders = null
+		mobileSliders.map(x => {
+			console.log(typeof x, x)
+			if (Array.isArray(x)) {
+				x.map(x => x.destroy())
+			} else {
+				x.destroy()
+			}
+		})
+		mobileSliders = []
 		mobileSlidersActive = false
 	}
 }

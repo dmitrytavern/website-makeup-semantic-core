@@ -4,35 +4,49 @@ section.webinar
         .webinar__inner
             h3.webinar__title#anchor-webinar Вебинары
 
-            .videos-box
-                .videos-box__list
+            .videos-box.webinar__videos-box
+                .videos-box__list-container.swiper-container.webinar__slider
 
-                    .video
-                        .video__inner
-                            .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=n4VXcYWvETU" )
-                                img.video__img( src=require('../../img/process-1.png') )
-                                .video__view
-                                    i.icon-play
+                    .swiper-wrapper.videos-box__list.webinar__slider-list
 
-                            .video__title Процесс написания текстов
+                        .swiper-slide
+                            .video__inner
+                                .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=n4VXcYWvETU" )
+                                    img.video__img( src=require('../../img/process-1.png') )
+                                    .video__view
+                                        i.icon-play
 
-                    .video
-                        .video__inner
-                            .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=S4HSEbWPqlA" )
-                                img.video__img( src=require('../../img/process-2.png') )
-                                .video__view
-                                    i.icon-play
+                                .video__title Процесс написания текстов
 
-                            .video__title Процесс написания текстов
+                        .swiper-slide
+                            .video__inner
+                                .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=S4HSEbWPqlA" )
+                                    img.video__img( src=require('../../img/process-2.png') )
+                                    .video__view
+                                        i.icon-play
 
-                    .video
-                        .video__inner
-                            .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=stYvCmQg5cs" )
-                                img.video__img( src=require('../../img/process-3.png') )
-                                .video__view
-                                    i.icon-play
+                                .video__title Процесс написания текстов
 
-                            .video__title Работа в команде
+                        .swiper-slide
+                            .video__inner
+                                .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=stYvCmQg5cs" )
+                                    img.video__img( src=require('../../img/process-3.png') )
+                                    .video__view
+                                        i.icon-play
+
+                                .video__title Работа в команде
+
+                        .swiper-slide.webinar__youtube-slide-container
+                            a(href="#" target="_blank").contact-box.videos-box__link-box.webinar__youtube.webinar__youtube-slide
+                                .webinar__youtube-box
+                                    svg
+                                        use( xlink:href=sprite('youtube') )
+
+                                p.webinar__youtube-text Смотреть больше на нашем
+
+                                span.webinar__youtube-title  <span class="red">Youtube</span> канале
+
+                    .slider__pagination
 
                 a(href="#" target="_blank").contact-box.videos-box__link-box.webinar__youtube
 

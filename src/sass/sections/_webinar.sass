@@ -27,6 +27,9 @@
       .webinar__youtube-arrow
         right: 9%
 
+    .red
+      color: #F95D5D
+
   &__youtube-text
     margin-bottom: 30px
 
@@ -40,9 +43,6 @@
       max-width: 52px
       max-height: 49px
       margin-right: 25px
-
-    .red
-      color: #F95D5D
 
   &__youtube-arrow
     transition: right .3s
@@ -89,3 +89,57 @@
 
       &-arrow
         right: 6%
+
+@media screen and (min-width: 991px)
+  .webinar
+    &__youtube-slide-container
+      display: none
+
+@media screen and (max-width: 991px)
+  .webinar
+    margin-top: 160px
+
+    &__inner
+      padding-bottom: 40px
+
+    &__title
+      margin-bottom: 60px
+
+    &__videos-box
+      padding-left: 0
+      padding-right: 0
+
+    &__youtube-slide-container
+      height: unset
+
+    &__youtube-slide
+      transform: unset
+      padding: 35px 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin-top: 0
+      height: 100%
+      max-height: 180px
+
+    &__youtube:not(&__youtube-slide)
+      display: none
+
+    &__youtube-text
+      display: block
+      font-size: 18px
+      margin-top: 15px
+      margin-bottom: 15px
+
+    &__youtube-box svg
+      margin-right: 0
+      max-width: 48px
+      max-height: 45px
+
+    &__youtube-title
+      font-size: 22px
+      font-family: 'TTCommons DemiBold', sans-serif
+
+    &__slider-list
+      display: flex
