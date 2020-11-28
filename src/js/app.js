@@ -86,7 +86,7 @@ function scrollPage() {
 	}
 
 	setTimeout(function () {
-		// if (window.innerWidth < 992) $menu.css('padding-top', $header.outerHeight(true))
+		if (window.innerWidth < 992) $menu.css('padding-top', $header.outerHeight(true))
 	}, 300)
 }
 
@@ -97,6 +97,7 @@ function toggleHeaderMenu() {
 	document.body.classList.toggle('menu-opened')
 }
 
+$('.menu__navigation a').on('click', toggleHeaderMenu)
 $($headerMenuBtn).on('click', toggleHeaderMenu)
 
 $(window).on('resize', scrollPage)

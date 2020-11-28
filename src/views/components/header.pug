@@ -15,7 +15,7 @@ mixin header()
                         span
 
                 .header__column.header__column-navigation
-                    nav(id="header-anchors-navigation").header__navigation.navbar
+                    nav.header-anchors-navigation.header__navigation.navbar
                        .hidden.
                             <li><a href="#anchor-process" class="nav-link"></a></li>
                             <li><a href="#anchor-text-core" class="nav-link"></a></li>
@@ -27,6 +27,22 @@ mixin header()
                            li.nav-item <a href="#anchor-reviews" class="nav-link">Отзывы</a>
                            li.nav-item <a href="#anchor-coop" class="nav-link">Сотрудничество</a>
 
-                    a( href="#" ).header__telegram.btn.btn-primary-while.btn-icon
+                    a( href="#" target="_blank").header__telegram.btn.btn-primary-while.btn-icon
                         i.icon-telegram
                         span Телеграм
+
+    .menu
+        .menu__wrapper
+            nav.header-anchors-navigation
+                ul.menu__navigation.nav.nav-pills
+                    li.nav-item <a href="#anchor-prices" class="nav-link">Цены</a>
+                    li.nav-item <a href="#" class="nav-link">Контакты</a>
+                    li.nav-item <a href="#anchor-reviews" class="nav-link">Отзывы</a>
+                    li.nav-item <a href="#anchor-coop" class="nav-link">Сотрудничество</a>
+
+            .menu__footer
+                .menu__email <a href="mailto: info@nx-agency.com">info@nx-agency.com</a>
+                a(href="#" target="_blank").menu__telegram
+                    i.icon-telegram
+                    span Телеграм
+
