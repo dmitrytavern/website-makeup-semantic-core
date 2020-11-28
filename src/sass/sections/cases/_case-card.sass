@@ -4,8 +4,7 @@
     display: flex
 
   &__image
-    max-width: 610px
-    align-self: center
+    max-width: 602px
 
   &__content
     padding-top: 5px
@@ -49,6 +48,9 @@
       align-items: center
       margin-bottom: 15px
 
+      p
+        margin-top: 3px
+
     &-list
       margin-top: 30px
 
@@ -64,17 +66,12 @@
     &-link
       margin: 0 24px
 
-      span
-        vertical-align: top
-        padding-bottom: 5px
-        margin-left: 12px
-
       &:first-child
         margin-left: 0
       &:last-child
         margin-right: 0
 
-@media screen and (min-width: 1440px)
+@media screen and (min-width: 1300px)
   .case-card
     &__content
       border-left: 1px solid #E9F0FF
@@ -83,8 +80,10 @@
 
     &__image
       align-self: center
+      width: 602px
+      height: 404px
 
-@media screen and (max-width: 1439px)
+@media screen and (max-width: 1299px)
   .case-card
     &__content
       margin-left: 30px

@@ -92,10 +92,7 @@ scrollPage()
 
 new Swiper('.swiper-container', {
 	loop: false,
-	autoHeight: true,
 	effect: 'fade',
-	noSwiping: true,
-	allowTouchMove: false,
 	fadeEffect: {
 		crossFade: true
 	},

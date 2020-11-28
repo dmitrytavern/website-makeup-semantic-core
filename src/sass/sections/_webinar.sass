@@ -20,10 +20,12 @@
     transition: border .3s
     position: relative
     border: 2px solid #ffffff
-    padding: 40px 70px
 
     &:hover
       border-color: #6F5EEA
+
+      .webinar__youtube-arrow
+        right: 9%
 
   &__youtube-text
     margin-bottom: 30px
@@ -43,6 +45,7 @@
       color: #F95D5D
 
   &__youtube-arrow
+    transition: right .3s
     position: absolute
     right: 12%
     top: 50%
@@ -50,10 +53,19 @@
     color: $color-primary
     font-size: 16px
 
+@media screen and (min-width: 1300px)
+  .webinar
+    &__youtube
+      padding: 2.5% 4.8%
 
-@media screen and (max-width: 1439px)
+@media screen and (max-width: 1299px)
   .webinar
     margin-top: 140px
+
+    &__dot-top
+      left: unset
+      right: 0
+      transform: translateY(-20%)
 
     &__inner
       padding-left: 50px
@@ -64,6 +76,10 @@
       padding: 25px 70px 25px 25px
       transform: translateY(50%)
       margin-top: 28px
+
+      &:hover
+        .webinar__youtube-arrow
+          right: 4%
 
       &-box span
         margin-top: 4px

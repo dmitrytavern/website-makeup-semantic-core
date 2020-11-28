@@ -33,8 +33,11 @@
 
       cursor: pointer
 
-      &:hover
-        font-size: 28px
+      &:before
+        transition: transform .3s
+
+      &:hover:before
+        transform: scale(1.1)
 
     img
       box-shadow: $box-shadow-15

@@ -3,6 +3,12 @@
   overflow: hidden
   margin-top: 150px
 
+  &__image-column img
+    max-width: calc(100% + 44px)
+    display: block
+    margin-left: -22px
+    margin-right: -22px
+
   &__background
     position: absolute
     top: 0
@@ -33,7 +39,7 @@
     border: none
     box-shadow: $box-shadow-25
 
-@media screen and (min-width: 1440px)
+@media screen and (min-width: 1300px)
   .cooperation
     &__title
       margin-bottom: 90px
@@ -42,10 +48,15 @@
       padding-top: 60px
       padding-bottom: 65px
 
+    &__image-column
+      padding-left: 31px
+      padding-right: 28px
+
     &__content
       padding-top: 30px
+      padding-left: 28px
 
-@media screen and (max-width: 1439px)
+@media screen and (max-width: 1299px)
   .cooperation
     margin-top: 90px
 
