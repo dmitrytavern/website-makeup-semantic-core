@@ -1,5 +1,6 @@
 .section-title
   text-align: center
+  line-height: 60px
 
   &::after
     content: ''
@@ -8,7 +9,7 @@
     max-width: 187px
     height: 1px
     background: $color-primary
-    margin: 5px auto 0
+    margin: 8px auto 0
 
 .section-title-icon
   text-align: center
@@ -62,3 +63,8 @@
 @media screen and (max-width: 991px)
   .section-title
     margin-bottom: 80px
+
+@media screen and (max-width: 767px)
+  .section-title
+    &::after
+      margin-top: 5px

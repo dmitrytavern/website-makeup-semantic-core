@@ -107,6 +107,15 @@
   .header__menu
     display: none
 
+@media screen and (max-width: 991px) and (min-width: 768px)
+  .header
+    &__inner
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+
+    &__column-navigation
+      justify-content: flex-end
+
 @media screen and (max-width: 991px)
   .header__navigation
       display: none
