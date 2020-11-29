@@ -1,0 +1,98 @@
+.contacts-media
+  transition: color .3s, background-color .3s
+  background: #F4F8FF
+  border-radius: 20px
+
+  &__inner
+    padding: 30px 45px 25px
+    text-align: center
+    font-size: 19px
+
+  i
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+
+    width: 82px
+    height: 82px
+    border-radius: 50%
+    background: #ffffff
+    color: $color-primary
+    font-size: 32px
+
+    &.is-small
+      padding-right: 4px
+      padding-top: 2px
+      font-size: 27px
+
+  &__title
+    transition: color .3s
+    color: $color-primary
+    font-size: 24px
+    margin-bottom: 4px
+    margin-top: 25px
+
+
+@media screen and (max-width: 1299px)
+  .contacts-media
+    &__inner
+      padding: 20px 27px 15px
+      font-size: 18px
+
+    &__title
+      font-size: 22px
+
+
+@media screen and (max-width: 1099px) and (min-width: 768px)
+  .contacts-media
+    &__inner
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      text-align: left
+      padding-left: 20px
+      padding-right: 20px
+
+    &__title
+      font-size: 20px
+      margin-bottom: 6px
+      margin-top: 0
+    i
+      margin: 0 25px 0 0
+
+@media screen and (max-width: 1099px)
+  .contacts-media
+    &__inner
+      font-size: 17px
+
+    &__title
+      font-size: 20px
+
+    i
+      width: 72px
+      height: 72px
+
+@media screen and (min-width: 768px)
+  .contacts-media:hover
+    background: $color-primary
+    color: #ffffff
+
+    .contacts-media__title
+      color: #ffffff
+
+@media screen and (max-width: 767px)
+  .contacts-media
+    background: none
+
+    &__inner
+      padding: 0
+
+    i
+      background: #F4F8FF
+
+    &:hover
+      i
+        transition: background-color .3s, color .3s
+        background: $color-primary
+        color: #ffffff

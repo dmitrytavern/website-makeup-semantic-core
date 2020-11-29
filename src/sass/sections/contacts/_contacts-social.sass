@@ -1,0 +1,45 @@
+.contacts-social
+  transition: box-shadow .3s, background-color .3s
+  font-family: "TTCommons", sans-serif
+  background: #ffffff
+  border-radius: 20px
+  box-shadow: $box-shadow-20
+  cursor: pointer
+
+  &__inner
+    padding: 20px 30px
+    display: flex
+    align-items: center
+    height: 100%
+
+  i
+    margin-bottom: 3px
+    margin-right: 30px
+    font-size: 32px
+    color: $color-primary
+
+  &__name
+    font-size: 17px
+    color: #585858
+    margin-top: 2px
+
+  &:hover
+    box-shadow: none
+    background: #F4F8FF
+
+@media screen and (max-width: 1299px)
+  .contacts-social
+    &__inner
+      padding: 20px 25px
+
+    i
+      margin-right: 25px
+
+@media screen and (max-width: 767px)
+  .contacts-social
+    &__inner
+      padding: 14px 30px
+      min-height: 70px
+
+    i
+      margin-right: 30px

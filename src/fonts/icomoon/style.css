@@ -12,7 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-website:before {
+  content: "\e90d";
+}
+.icon-telegram-filled:before {
+  content: "\e90e";
+}
+.icon-blog:before {
+  content: "\e90f";
+}
 .icon-external-link:before {
   content: "\e90b";
   color: #5864ff;

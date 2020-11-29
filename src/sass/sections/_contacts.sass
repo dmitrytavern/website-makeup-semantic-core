@@ -1,0 +1,87 @@
+.contacts
+  margin-top: 150px
+
+  &__inner
+    position: relative
+
+  &__dot-left
+    position: absolute
+    top: -24%
+    left: -8%
+
+  &__title
+    margin-bottom: 90px
+
+  &__subtitle
+    font-size: 32px
+    line-height: 60px
+    margin-bottom: 60px
+
+  &__row
+    display: flex
+    justify-content: space-between
+    grid-template-columns: 1fr 1fr
+
+  &__social-list
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-row-gap: 50px
+    grid-column-gap: 55px
+
+  &__media-list
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 30px
+
+@media screen and (max-width: 1299px)
+  .contacts
+    &__dot-left
+      display: none
+
+    &__social-list
+      grid-row-gap: 30px
+      grid-column-gap: 30px
+
+    &__media-list
+      grid-column-gap: 20px
+
+@media screen and (max-width: 1099px)
+  .contacts
+
+    &__title
+      margin-bottom: 80px
+
+    &__subtitle
+      line-height: normal
+
+    &__row
+      display: block
+
+    &__social-list
+      padding-left: 25px
+      padding-right: 25px
+      grid-row-gap: 50px
+      grid-column-gap: 40px
+      margin-bottom: 60px
+
+    &__media-list
+      grid-column-gap: 40px
+
+@media screen and (max-width: 767px)
+  .contacts
+    &__subtitle
+      margin-bottom: 50px
+
+    &__social-list
+      grid-template-columns: 1fr
+      grid-row-gap: 15px
+      margin-bottom: 50px
+      padding-left: 0
+      padding-right: 0
+
+    &__media-list
+      display: flex
+      justify-content: space-around
+
+@import "contacts/contacts-social"
+@import "contacts/contacts-media"

@@ -1,6 +1,5 @@
 .btn-fixed-container
   position: fixed
-  bottom: 80px
   left: 50%
   transform: translateX(-50%)
   z-index: 9
@@ -51,6 +50,9 @@
   &.is-fixed
     transform: translateY(50%)
 
+@media screen and (min-width: 992px)
+  .btn-fixed-container
+    bottom: 80px !important
 
 @media screen and (max-width: 991px)
   .btn-fixed-container
