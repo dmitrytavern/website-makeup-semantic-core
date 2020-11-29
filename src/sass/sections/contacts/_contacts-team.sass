@@ -1,0 +1,28 @@
+.contacts-team
+  margin-top: 90px
+
+  &__subtitle
+    margin-bottom: 0
+
+  &__head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 50px
+
+
+@media screen and (min-width: 992px)
+  .contacts-team .contacts-team__pagination
+    display: none
+
+@media screen and (max-width: 992px)
+  .contacts-team
+    &__slider-arrow
+      display: none
+
+@media screen and (max-width: 767px)
+  .contacts-team
+    &__slider
+      overflow: unset
+      padding-left: 60px
+      padding-right: 60px

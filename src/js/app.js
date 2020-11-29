@@ -211,6 +211,41 @@ new Swiper('.cases__slider', {
 	},
 })
 
+const $contactTeamButtonNext = $('.contacts-team .swiper-button-next')[0]
+const $contactTeamButtonPrev = $('.contacts-team .swiper-button-prev')[0]
+new Swiper('.contacts-team__slider.swiper-container', {
+	loop: false,
+	slidesPerView: 'auto',
+	spaceBetween: 30,
+	navigation: {
+		nextEl: $contactTeamButtonNext,
+		prevEl: $contactTeamButtonPrev,
+		disabledClass: 'is-disabled'
+	},
+	pagination: {
+		el: '.slider__pagination',
+		bulletClass: 'slider__bullet',
+		bulletActiveClass: 'is-active',
+		clickable: true
+	},
+	breakpoints: {
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 80,
+		},
+
+		992: {
+			slidesPerView: 5,
+			spaceBetween: 30,
+		},
+
+		1300: {
+			slidesPerView: 6,
+			spaceBetween: 70,
+		}
+	}
+})
+
 $(window).on('load resize', checkMobileSliders)
 
 
