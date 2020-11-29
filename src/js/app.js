@@ -284,14 +284,13 @@ $('#modal-order-form').submit(function (e) {
 
 	if (!checkFormData('#modal-order', data)) {
 		const normData = normalizeFormData(data)
-		$('#modal-order .modal__tab').removeClass('is-active')
-		$('#modal-order .modal__tab[data-name="success"]').addClass('is-active')
+
 		$.ajax({
-			url: '/callback',
+			url: '/callback.php',
 			method: 'POST',
 			dataType: 'JSON',
 			data: {
-				address: normData.site,
+				site: normData.site,
 				contact: normData.contact,
 				examples: normData.examples,
 				count: normData.count,
@@ -302,9 +301,9 @@ $('#modal-order-form').submit(function (e) {
 				$('#modal-order .modal__tab').removeClass('is-active')
 				$('#modal-order .modal__tab[data-name="success"]').addClass('is-active')
 			})
-			.fail(function (res) {
+			.fail(function () {
 				const $errorText = $('#modal-order-form .form-error-text')
-				$errorText[0].innerHTML = res.message || 'Has Error'
+				$errorText[0].innerHTML = 'Has Error'
 				$errorText.addClass('is-active')
 
 				setTimeout(function () {

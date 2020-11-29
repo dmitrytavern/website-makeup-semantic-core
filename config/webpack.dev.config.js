@@ -37,6 +37,23 @@ module.exports = {
 	devServer: {
 		contentBase: build,
 		port: 3000,
+		headers: {
+			"Access-Control-Allow-Origin": "*",
+			"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+			"Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+		},
+		proxy: {
+			'/callback.php': {
+				target: "https://test2.greatpix.studio/callback.php",
+				changeOrigin: true,
+				cookieDomainRewrite: "localhost",
+				onProxyReq: (proxyReq) => {
+					if (proxyReq.getHeader("origin")) {
+						proxyReq.setHeader("origin", "https://test2.greatpix.studio/callback.php");
+					}
+				},
+			}
+		},
 
 		// Reloading browser if html was is change
 		before(app, server, compiler) {
