@@ -35,7 +35,7 @@ const $pinBlock       = $('#prices-pin-block')
 const $pinContainer   = $('#prices-pin-container')
 const $footer         = $('footer.footer')
 const $btnChatContainer = $('.btn-fixed-container')
-const $btnChat        = $('.btn-chat')
+const $btnChat        = $('.btn-fixed')
 
 function scrollPage() {
 	if (window.pageYOffset > 0) {

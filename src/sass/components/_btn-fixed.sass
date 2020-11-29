@@ -55,12 +55,18 @@
     bottom: 80px !important
 
 @media screen and (max-width: 991px)
+  .btn-up
+    &.is-fixed
+      transform: translateY(50%)
+
   .btn-fixed-container
     bottom: 30px
 
     &.is-absolute
       position: absolute
 
+
+@media screen and (max-width: 767px)
   .btn-up
     display: none
 
