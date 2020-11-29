@@ -11,7 +11,9 @@ section.cooperation
 
             .row
                 .col-12.col-lg-6.cooperation__image-column
-                    img( src=require('../../img/partner-img.png') alt="" )
+                    picture
+                        source( srcset=require('../../img/partner-img.png') media="(min-width: 768px)" )
+                        img( src=require('../../img/partner-img-xs.png') alt="" )
 
                 .col-12.col-lg-6.cooperation__content
                     p.mb-45.cooperation__content-description.
