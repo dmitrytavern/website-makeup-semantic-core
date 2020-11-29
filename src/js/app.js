@@ -216,7 +216,7 @@ const $contactTeamButtonPrev = $('.contacts-team .swiper-button-prev')[0]
 new Swiper('.contacts-team__slider.swiper-container', {
 	loop: false,
 	slidesPerView: 'auto',
-	spaceBetween: 30,
+	spaceBetween: 10,
 	navigation: {
 		nextEl: $contactTeamButtonNext,
 		prevEl: $contactTeamButtonPrev,
@@ -229,6 +229,10 @@ new Swiper('.contacts-team__slider.swiper-container', {
 		clickable: true
 	},
 	breakpoints: {
+		400: {
+			spaceBetween: 30,
+		},
+
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 80,
