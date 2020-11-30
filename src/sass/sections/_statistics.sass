@@ -15,7 +15,7 @@
     align-items: center
     justify-content: center
 
-    svg
+    &-icon
       max-width: 58px
       max-height: 43px
       margin-bottom: 4px
@@ -40,7 +40,7 @@
 @media screen and (min-width: 992px)
   .statistics
     &__item
-      svg
+      &-icon
         margin-right: 20px
 
 @media screen and (max-width: 991px)
@@ -54,7 +54,7 @@
     &__item
       flex-direction: column
 
-      svg
+      &-icon
         margin-bottom: 18px
 
 @media screen and (max-width: 767px)
@@ -63,8 +63,29 @@
       padding-top: 65px
 
     &__row
+      display: grid
+      grid-template-columns: 1fr 1fr
       grid-row-gap: 55px
 
     &__item
       font-size: 18px
       text-align: center
+      justify-content: space-between
+      height: 100%
+
+      &-icon
+        &-lang
+          max-width: 51px
+          max-height: 55px
+
+        &-difficult
+          max-width: 50px
+          max-height: 45px
+
+        &-orders
+          max-width: 49px
+          max-height: 53px
+
+        &-experiance
+          max-width: 56px
+          max-height: 43px

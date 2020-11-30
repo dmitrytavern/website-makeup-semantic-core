@@ -6,9 +6,10 @@
     &:hover
       .video__view
         background: #F4F8FF
-
-        i
-          transform: scale(1.1)
+        width: 56px
+        height: 56px
+        left: 9px
+        bottom: 9px
 
   &__img
     width: 100%
@@ -16,7 +17,7 @@
     box-shadow: $box-shadow-15
 
   &__view
-    transition: background-color .3s
+    transition: width .3s, height .3s, left .3s, bottom .3s, background-color .3s
     display: flex
     align-items: center
     justify-content: center

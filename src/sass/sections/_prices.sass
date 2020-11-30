@@ -77,9 +77,6 @@
     &__list:not(:last-child)
       margin-bottom: 25px
 
-    &__list-title
-      padding-top: 18px
-      padding-bottom: 18px
 
     &__list-inner
       transition: background .3s, border .3s
@@ -91,6 +88,13 @@
       &.is-active
         background: #E9F0FF
         border-color: $color-primary
+
+    &__list-title
+      padding-top: 18px
+      padding-bottom: 18px
+
+      span
+        margin-top: 4px
 
   .prices__fixed
     grid-row: 1

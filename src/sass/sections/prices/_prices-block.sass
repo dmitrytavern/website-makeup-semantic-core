@@ -16,7 +16,7 @@
     position: relative
 
     i
-      transition: font-size .3s
+      transition: width .3s, height .3s, top .3s, right .3s, background-color .3s
       display: flex
       align-items: center
       justify-content: center
@@ -33,11 +33,12 @@
 
       cursor: pointer
 
-      &:before
-        transition: transform .3s
-
-      &:hover:before
-        transform: scale(1.1)
+      &:hover
+        background-color: #3342FF
+        width: 56px
+        height: 56px
+        top: -3px
+        right: -3px
 
     img
       box-shadow: $box-shadow-15
@@ -95,6 +96,9 @@
   .prices-block__subtitle
     text-align: left
     margin-bottom: 30px
+
+  .prices-block__list
+    font-size: 17px
 
   .prices-block__include-list
     padding: 0

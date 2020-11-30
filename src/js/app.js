@@ -211,12 +211,15 @@ new Swiper('.cases__slider', {
 	},
 })
 
+
+const $contactTeamButtons    = $('.contacts-team__slider-arrow')
 const $contactTeamButtonNext = $('.contacts-team .swiper-button-next')[0]
 const $contactTeamButtonPrev = $('.contacts-team .swiper-button-prev')[0]
-new Swiper('.contacts-team__slider.swiper-container', {
+const contactSlider = new Swiper('.contacts-team__slider.swiper-container', {
 	loop: false,
 	slidesPerView: 'auto',
-	spaceBetween: 10,
+	spaceBetween: 30,
+	centeredSlides: true,
 	navigation: {
 		nextEl: $contactTeamButtonNext,
 		prevEl: $contactTeamButtonPrev,
@@ -229,28 +232,56 @@ new Swiper('.contacts-team__slider.swiper-container', {
 		clickable: true
 	},
 	breakpoints: {
-		400: {
-			spaceBetween: 30,
-		},
-
 		768: {
+			centeredSlides: false,
 			slidesPerView: 3,
 			spaceBetween: 80,
 		},
 
 		992: {
+			centeredSlides: false,
 			slidesPerView: 5,
 			spaceBetween: 30,
 		},
 
 		1300: {
+			centeredSlides: false,
 			slidesPerView: 6,
 			spaceBetween: 70,
 		}
+	},
+})
+
+function contactSliderHideArrows() {
+	console.log('Init')
+	const activeNextBtn = $($contactTeamButtonNext).hasClass('is-disabled')
+	const activePrevBtn = $($contactTeamButtonPrev).hasClass('is-disabled')
+
+	if (activeNextBtn && activePrevBtn) {
+		$contactTeamButtons.addClass('is-hidden')
+	} else {
+		$contactTeamButtons.removeClass('is-hidden')
 	}
+}
+contactSliderHideArrows()
+
+contactSlider.on('resize', function () {
+	contactSliderHideArrows()
 })
 
 $(window).on('load resize', checkMobileSliders)
+
+
+// Webinar
+
+const $webinarVideo = $('.webinar__slider .video__img')
+const $webinarYoutube = $('.webinar__youtube-slide')
+
+function webinarYoutubeSize() {
+	$webinarYoutube.css({ 'max-height': $webinarVideo.height() })
+}
+
+$(window).on('load resize', webinarYoutubeSize)
 
 
 // Collapses
