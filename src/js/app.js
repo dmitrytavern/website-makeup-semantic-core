@@ -272,13 +272,40 @@ contactSlider.on('resize', function () {
 $(window).on('load resize', checkMobileSliders)
 
 
+
+// Process
+
+const $processVideo = $('.process__slider .video__img')
+const $processTelegram = $('.process__telegram')
+
+function webinarTelegramSize() {
+	if (window.innerWidth >= 1300) {
+		$processTelegram.css({ 'height': $processVideo.height() })
+	} else {
+		$processTelegram.css({ 'height': 'unset' })
+	}
+
+}
+
+$(window).on('load resize', webinarTelegramSize)
+
+
+
 // Webinar
 
 const $webinarVideo = $('.webinar__slider .video__img')
-const $webinarYoutube = $('.webinar__youtube-slide')
+const $webinarYoutube = $('.webinar__youtube')
 
 function webinarYoutubeSize() {
-	$webinarYoutube.css({ 'max-height': $webinarVideo.height() })
+	const height = $webinarVideo.height()
+
+	if (height < 160) {
+		$webinarYoutube.addClass('is-mini')
+	} else {
+		$webinarYoutube.removeClass('is-mini')
+	}
+
+	$webinarYoutube.css({ 'max-height': height })
 }
 
 $(window).on('load resize', webinarYoutubeSize)

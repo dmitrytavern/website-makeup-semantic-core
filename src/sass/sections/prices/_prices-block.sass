@@ -16,7 +16,7 @@
     position: relative
 
     i
-      transition: width .3s, height .3s, top .3s, right .3s, background-color .3s
+      transition: background-color .3s
       display: flex
       align-items: center
       justify-content: center
@@ -27,18 +27,30 @@
       width: 50px
       height: 50px
       font-size: 24px
-      background: $color-primary
-      border-radius: 50%
       color: #ffffff
 
       cursor: pointer
 
-      &:hover
-        background-color: #3342FF
-        width: 56px
-        height: 56px
-        top: -3px
-        right: -3px
+      &:before
+        position: relative
+        z-index: 2
+
+      &:after
+        transition: background-color .3s, transform .3s
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border-radius: 50%
+        background: $color-primary
+        z-index: 1
+
+      &:hover:after
+        transform: scale(1.1)
+        background: #3342FF
+
 
     img
       box-shadow: $box-shadow-15
