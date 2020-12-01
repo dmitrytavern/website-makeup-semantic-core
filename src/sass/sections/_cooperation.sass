@@ -47,7 +47,7 @@
 
     &__image-column
       padding-left: 31px
-      padding-right: 28px
+      padding-right: 0
 
     &__content
       padding-top: 30px
@@ -80,9 +80,21 @@
 @media screen and (min-width: 992px)
   .cooperation
     &__image-column img
-      max-width: calc(100% + 44px)
-      margin-left: -22px
-      margin-right: -22px
+      max-width: 100%
+
+
+@media screen and (min-width: 1561px)
+  .cooperation
+    &__image-column
+      padding-left: 0
+      padding-right: 0
+
+      img
+        max-width: 747px
+        width: 100%
+        margin-left: auto
+        margin-right: 0
+
 
 @media screen and (max-width: 991px)
   .cooperation
@@ -90,6 +102,10 @@
 
     &__title
       margin-bottom: 80px
+
+    &__image-column
+      padding-right: 0
+      padding-left: 0
 
     &__button
       margin-top: 65px

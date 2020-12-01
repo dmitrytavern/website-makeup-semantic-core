@@ -16,9 +16,23 @@
     justify-content: center
 
     &-icon
-      max-width: 58px
-      max-height: 43px
       margin-bottom: 4px
+
+      &-lang
+        max-width: 61px
+        max-height: 58px
+
+      &-difficult
+        max-width: 50px
+        max-height: 45px
+
+      &-orders
+        max-width: 49px
+        max-height: 52px
+
+      &-experiance
+        max-width: 56px
+        max-height: 43px
 
     &-box:not(:last-child):before
       content: ''
@@ -37,6 +51,11 @@
       &-box:not(:last-child):before
         content: unset
 
+      &-icon
+        &-lang
+          max-width: 51px
+          max-height: 55px
+
 @media screen and (min-width: 992px)
   .statistics
     &__item
@@ -52,6 +71,8 @@
       margin-top: 55px
 
     &__item
+      height: 100%
+      justify-content: space-between
       flex-direction: column
 
       &-icon
@@ -77,15 +98,3 @@
         &-lang
           max-width: 51px
           max-height: 55px
-
-        &-difficult
-          max-width: 50px
-          max-height: 45px
-
-        &-orders
-          max-width: 49px
-          max-height: 53px
-
-        &-experiance
-          max-width: 56px
-          max-height: 43px

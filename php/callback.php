@@ -2,13 +2,14 @@
 
 if (!empty($_POST))
 {
-    $ADDRESS_FROM = 'Semantic Core Site <semantic.core.site@mysite.com>';
-    $ADDRESS_TO = 'dogger.work@gmail.com';
+    $ADDRESS_FROM = 'Semantic Core Site <nx-agency.com>';
+    $ADDRESS_TO = 'k.lyovushkin@gmail.com';
     $MAIL_SUBJECT = 'Semantic Core Site Order';
 
     // To send HTML mail, the Content-type header must be set
     $headers[] = 'MIME-Version: 1.0';
-    $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+    $headers[] = 'X-Mailer: PHP/'.PHP_VERSION;
+    $headers[] = 'Content-type: text/html; charset=utf-8';
 
     // Additional headers
     $headers[] = 'from: Semantic Core Site';
@@ -44,14 +45,19 @@ if (!empty($_POST))
             </html>
         ';
 
-        $arr = array('success' => true);
-        mail(
+        $success = mail(
             $ADDRESS_TO,
             $MAIL_SUBJECT,
             $message,
-            implode("\r\n", $headers),
-            "-f " . $ADDRESS_FROM
+            implode("\r\n", $headers)
         );
+
+		if (!$success) {
+			echo 'Error';
+            echo error_get_last()['message'];
+        }
+
+        $arr = array('success' => $success);
         echo json_encode($arr);
     } else {
         $arr = array('success' => false);

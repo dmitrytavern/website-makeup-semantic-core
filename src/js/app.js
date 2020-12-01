@@ -217,9 +217,8 @@ const $contactTeamButtonNext = $('.contacts-team .swiper-button-next')[0]
 const $contactTeamButtonPrev = $('.contacts-team .swiper-button-prev')[0]
 const contactSlider = new Swiper('.contacts-team__slider.swiper-container', {
 	loop: false,
-	slidesPerView: 'auto',
+	slidesPerView: 2,
 	spaceBetween: 30,
-	centeredSlides: true,
 	navigation: {
 		nextEl: $contactTeamButtonNext,
 		prevEl: $contactTeamButtonPrev,
@@ -253,7 +252,6 @@ const contactSlider = new Swiper('.contacts-team__slider.swiper-container', {
 })
 
 function contactSliderHideArrows() {
-	console.log('Init')
 	const activeNextBtn = $($contactTeamButtonNext).hasClass('is-disabled')
 	const activePrevBtn = $($contactTeamButtonPrev).hasClass('is-disabled')
 
@@ -383,7 +381,7 @@ $('#modal-order-form').submit(function (e) {
 		const normData = normalizeFormData(data)
 
 		$.ajax({
-			url: '/callback.php',
+			url: 'callback.php',
 			method: 'POST',
 			dataType: 'JSON',
 			data: {

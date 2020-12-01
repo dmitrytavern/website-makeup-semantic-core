@@ -7,8 +7,8 @@ section.prices
             .prices-block
                 .prices-block__inner
                     .prices-block__image
-                        img( src=require('../../img/article-img.jpg') alt="Пример услуги" )
                         i( data-fancybox data-src=require('../../img/article-img.jpg')).icon-zoom-in
+                        img( src=require('../../img/article-thumb.jpg') alt="Пример услуги" )
 
                     h4.prices-block__title ТЗ + ключи под Статью
                     ul.prices-block__list.list
@@ -29,8 +29,8 @@ section.prices
                     h5.prices-block__subtitle Оба Тарифа Включают:
 
                     .collapse-list.prices__list
-                        .prices__list-inner.collapse-list__inner
-                            .prices__list-title.collapse-list__front.collapsed.collapsed-md-hidden( data-toggle="collapse" data-target="#prices-1" )
+                        .prices__list-inner.collapse-list__inner.is-active
+                            .prices__list-title.collapse-list__front.collapse.collapsed-md-hidden( data-toggle="collapse" data-target="#prices-1" )
                                 .collapse-list__title-icon
                                     svg
                                         use( xlink:href=sprite('icon-category-keys') )
@@ -39,7 +39,7 @@ section.prices
 
                                 i.icon-down-arrow
 
-                            .prices__list-content.collapse-list__content.collapse.collapse-md-hidden#prices-1
+                            .prices__list-content.collapse-list__content.collapse.show.collapse-md-hidden#prices-1
                                 ul.prices-block__include-list.is-darker.list.prices-list
                                     li Все запросы по теме статьи;
                                     li С кластеризацией и чисткой;
@@ -71,8 +71,8 @@ section.prices
             .prices-block
                 .prices-block__inner
                     .prices-block__image
-                        img( src=require('../../img/longread-img.png') alt="Пример услуги" )
                         i( data-fancybox data-src=require('../../img/longread-img.png') ).icon-zoom-in
+                        img( src=require('../../img/longread-thumb.jpg') alt="Пример услуги" )
 
                     h4.prices-block__title ТЗ + ключи под Лонгрид
                     ul.prices-block__list.list

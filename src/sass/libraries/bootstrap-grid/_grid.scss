@@ -50,3 +50,23 @@
 @if $enable-grid-classes {
   @include make-grid-columns();
 }
+
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  .container,
+  .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .row {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .col,
+  [class*="col-"] {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}

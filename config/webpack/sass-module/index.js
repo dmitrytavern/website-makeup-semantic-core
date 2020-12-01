@@ -19,7 +19,7 @@ module.exports = function (config) {
 			{
 				loader: MiniCssExtractPlugin.loader,
 				options: {
-					publicPath: '/'
+					publicPath: '../'
 				},
 			},
 			"css-loader",
