@@ -14,6 +14,7 @@
 
   &__image
     position: relative
+    cursor: pointer
 
     i
       transition: background-color .3s
@@ -47,13 +48,13 @@
         background: $color-primary
         z-index: 1
 
-      &:hover
-        &:after
-          transform: scale(1.1)
-          background: #3342FF
+    &:hover
+      i:after
+        transform: scale(1.1)
+        background: #3342FF
 
-        + img
-          transform: scale(1.05)
+      img
+        transform: scale(1.05)
 
 
     img
@@ -94,6 +95,16 @@
     &__list
       margin-top: 8px
 
+
+@media screen and (max-width: 1496px) and (min-width: 1299px)
+  .prices-block__include-list
+    padding-top: 19px
+    padding-bottom: 19px
+
+@media screen and (max-width: 1343px) and (min-width: 1299px)
+  .prices-block__include-list
+    padding-top: 10px
+    padding-bottom: 10px
 
 @media screen and (max-width: 991px)
   .prices-block__include-list
