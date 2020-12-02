@@ -30,12 +30,16 @@
       top: unset
 
 @media screen and (max-width: 1299px)
-  .prices__grid
-    grid-template-columns: 54.4% calc(45.6% - 60px)
-    grid-column-gap: 60px
-    grid-row-gap: 100px
-    padding-left: 50px
-    padding-right: 50px
+  .prices
+    &__grid
+      grid-template-columns: 54.4% calc(45.6% - 60px)
+      grid-column-gap: 60px
+      grid-row-gap: 100px
+      padding-left: 50px
+      padding-right: 50px
+
+    &__list:not(:last-child)
+      margin-bottom: 20px
 
 @media screen and (max-width: 991px)
   .prices
@@ -52,9 +56,6 @@
 
 @media screen and (min-width: 768px)
   .prices
-    &__list:not(:last-child)
-      margin-bottom: 20px
-
     &__list-inner
       background: none
 
@@ -80,10 +81,6 @@
 
       > div:last-child
         margin-top: 50px
-
-    &__list:not(:last-child)
-      margin-bottom: 25px
-
 
     &__list-inner
       transition: background .3s, border .3s

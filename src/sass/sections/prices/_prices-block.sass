@@ -70,7 +70,6 @@
     margin-top: 30px
 
   &__subtitle
-    margin-bottom: 25px
     text-align: center
 
   &__include-list
@@ -84,6 +83,16 @@
 
     &:last-child
       margin-bottom: 0
+
+    li
+      line-height: 28px
+      margin-top: 4px
+      margin-bottom: 4px
+
+      &:first-child
+        margin-top: 0
+      &:last-child
+        margin-bottom: 0
 
   &__button
     transform: translateY(50%)
@@ -99,16 +108,38 @@
     &__list
       margin-top: 8px
 
+@media screen and (max-width: 1496px) and (min-width: 1300px)
+  .prices-block
+    &__include-list
+      padding-top: 18px
+      padding-bottom: 18px
 
-@media screen and (max-width: 1496px) and (min-width: 1299px)
-  .prices-block__include-list
-    padding-top: 19px
-    padding-bottom: 19px
+@media screen and (min-width: 1300px)
+  .prices
+    &__fixed-block
+      display: grid
+      grid-row-gap: 20px
+      height: 100%
 
-@media screen and (max-width: 1343px) and (min-width: 1299px)
+    &__subtitle
+      margin-bottom: 5px
+
+    &__list-inner,
+    &__list-content,
+    &-block__include-list
+      height: 100%
+
+    &-block__include-list
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+@media screen and (max-width: 1299px)
   .prices-block__include-list
-    padding-top: 10px
-    padding-bottom: 10px
+    padding: 29px 28px
+
+  .prices-block__subtitle
+    margin-bottom: 25px
 
 @media screen and (max-width: 991px)
   .prices-block__include-list
