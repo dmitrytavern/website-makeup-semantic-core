@@ -1,25 +1,29 @@
 .reviews-down-line
   position: relative
-  background: #F4F8FF
+
+  &__container
+    position: relative
 
   &__dot-right
-    top: 0
+    bottom: 0
     right: 0
-    transform: translateY(-60%)
+    transform: translateY(108%)
+    z-index: 2
 
   &__inner
     position: relative
     z-index: 1
-    padding: 85px 110px
+    padding: 30px 65px
     display: flex
     align-items: center
-    justify-content: space-around
+    justify-content: space-between
+    background: #F4F8FF
+    border-radius: 20px
 
   &__buttons
     display: flex
 
   &__button
-    min-width: 190px
     margin: 0 15px
 
     &:first-child
@@ -31,6 +35,25 @@
     font-family: "TTCommons", sans-serif
     font-size: 21px
 
+    display: flex
+    align-items: center
+
+  &__icon
+    width: 128px
+    height: 128px
+    min-width: 128px
+    min-height: 128px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 50px
+    background: #fff
+    border-radius: 50%
+
+    svg
+      width: 53px
+      height: 44px
+
   &__title
     font-family: 'TTCommons', sans-serif
     font-weight: normal
@@ -39,39 +62,68 @@
     span
       font-family: 'TTCommons DemiBold', sans-serif
 
+@media screen and (min-width: 1300px)
+  .reviews-down-line__button
+    min-width: 190px
+
 @media screen and (max-width: 1299px)
   .reviews-down-line
+    &__dot-right
+      transform: translateY(92%)
+
     &__inner
-      padding-left: 50px
-      padding-right: 50px
+      padding-left: 24px
+      padding-right: 24px
       justify-content: space-between
+
+    &__icon
+      margin-right: 30px
+
+    &__title
+      font-size: min(calc(27px + 5 * ((100vw - 375px) / 1545)), 32px)
 
 @media screen and (max-width: 991px)
   .reviews-down-line
     &__dot-right
-      transform: translateY(-30%)
+      transform: translateY(12%)
 
     &__buttons
       justify-content: center
-      margin-top: 40px
+      margin-top: 30px
 
     &__inner
       display: block
       text-align: center
-      padding-top: 55px
-      padding-bottom: 50px
+      padding-top: 40px
+      padding-bottom: 40px
+      border-radius: 0
+
+    &__icon
+      display: none
+
+    &__text
+      justify-content: center
 
 @media screen and (max-width: 767px)
   .reviews-down-line
-    margin-top: 80px
+    margin-top: 55px
+    background: #F4F8FF
 
     &__inner
-      padding-left: 0
-      padding-right: 0
+      padding-left: 10px
+      padding-right: 10px
+      background: unset
 
     &__dot-right
-      right: -75px
-      transform: translateY(-22%)
+      right: -60px
+      transform: translateY(17%)
+      z-index: 1
+
+    &__text
+      padding: 0 25px
+
+    &__buttons
+      margin-top: 40px
 
     &__button
       min-width: 147px

@@ -173,14 +173,16 @@ section.reviews
                         .slider__pagination.reviews__slider-pagination
 
     .reviews__down-line.reviews-down-line
-        img( src=require('../../img/decor-3.png') alt="").dot.dot-3.reviews-down-line__dot-right
-
-        .container
+        .container.reviews-down-line__container
+            img( src=require('../../img/decor-3.png') alt="").dot.dot-3.reviews-down-line__dot-right
             .reviews-down-line__inner
-
                 .reviews-down-line__text
-                    h3.reviews-down-line__title И еще <span class="primary-color">1000+</span> Довольных Клиентов
-                    p Станьте одним из них!
+                    .reviews-down-line__icon
+                        svg
+                            use( xlink:href=sprite('icon-like-clients') )
+                    div
+                        h3.reviews-down-line__title И еще <span class="primary-color">1000+</span> Довольных Клиентов
+                        p Станьте одним из них!
 
                 .reviews-down-line__buttons
                     a( href="#" data-toggle="modal" data-target="#modal-order" ).reviews-down-line__button.btn.btn-primary Заказать
