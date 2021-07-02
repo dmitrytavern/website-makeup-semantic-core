@@ -14,16 +14,13 @@
     bottom: -2%
     left: -27%
 
-  li
-    font-family: "TTCommons", sans-serif
-
   &__inner
     padding-top: 60px
     padding-bottom: 65px
 
   &__grid
     display: grid
-    grid-template-columns: 1fr 340px 1fr
+    grid-template-columns: 1fr 330px 1fr
     grid-column-gap: 90px
 
     > div
@@ -44,6 +41,7 @@
       line-height: normal
 
       span
+        font-size: 15px
         margin-top: 3px
 
     &-icon
@@ -60,8 +58,6 @@
     &-rate
       display: block
       margin-top: 30px
-      font-family: 'TTCommons Italic', sans-serif
-      font-style: italic
 
 
 @media screen and (min-width: 1300px)
@@ -124,6 +120,9 @@
       padding-left: 0
       padding-right: 0
 
+    &__list
+      font-size: 15px
+
     &__prices
       width: 100%
       padding: 30px 65px 20px
@@ -161,7 +160,7 @@
       right: 0
 
     &__list
-      font-size: 18px
+      font-size: 15px
       margin-top: -5px
 
       li
@@ -172,7 +171,7 @@
 
     &__prices
       &-list
-        font-size: 18px
+        font-size: 15px
 
       &-rate
-        font-size: 16px
+        font-size: 14px

@@ -27,7 +27,7 @@
 
       width: 50px
       height: 50px
-      font-size: 24px
+      font-size: 21px
       color: $color-primary
 
       cursor: pointer
@@ -98,10 +98,9 @@
     transform: translateY(50%)
 
   &__button-link
-    font-family: 'TTCommons', sans-serif
     margin-top: 20px
     margin-left: 20px
-    font-size: 18px
+    font-size: 15px
 
 @media screen and (min-width: 992px)
   .prices-block
@@ -141,10 +140,14 @@
   .prices-block__subtitle
     margin-bottom: 25px
 
+  .prices-block__list,
+  .prices-block__include-list
+    font-size: 15px
+
 @media screen and (max-width: 991px)
   .prices-block__include-list
-    font-size: 18px
-    padding: 14px
+    font-size: 15px
+    padding: 12px
 
     li
       line-height: 32px
@@ -159,10 +162,14 @@
     margin-bottom: 30px
 
   .prices-block__list
-    font-size: 17px
+    font-size: 14px
 
   .prices-block__include-list
     padding: 0
+
+  .prices-block__list,
+  .prices-block__include-list
+    font-size: 15px
 
     &,
     &.is-darker

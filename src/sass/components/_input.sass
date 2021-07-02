@@ -1,7 +1,7 @@
 input
   transition: border .3s, color .3s
-  font-size: 16px
-  font-family: 'TTCommons', sans-serif
+  font-size: 14px
+  font-family: 'Inter', sans-serif
   border: 1px solid #E9F0FF
   border-radius: 3px
   background: #ffffff
@@ -30,21 +30,19 @@ input
 
 .input
   &__label
-    font-size: 16px
+    font-size: 14px
     margin-bottom: 10px
 
   &__error
     display: none
     color: #FC2A2A
     margin-top: 10px
-    font-size: 16px
+    font-size: 14px
 
   &-group
-    font-family: 'TTCommons', sans-serif
-
     &.is-required
       .input__label::before
         content: '* '
         color: $color-primary
-        font-family: 'TTCommons Bold', sans-serif
-        font-weight: bold
+        font-family: 'Inter', sans-serif
+        font-weight: 700
