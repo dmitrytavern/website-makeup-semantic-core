@@ -2880,6 +2880,7 @@ textarea {
 }
 .video__img {
   width: 100%;
+  height: auto;
   border-radius: 20px;
   box-shadow: 0 30px 45px rgba(164, 158, 209, 0.15);
 }
@@ -3980,6 +3981,7 @@ body.is-loaded .modal-custom-backdrop {
 }
 .footer__paymethods img {
   width: 92px;
+  height: auto;
   max-height: 26px;
 }
 .footer__paymethods svg {
@@ -4470,6 +4472,8 @@ body.is-loaded .modal-custom-backdrop {
           transform: scale(1.05);
 }
 .prices-block__image img {
+  width: auto;
+  height: auto;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -5071,6 +5075,8 @@ body.is-loaded .modal-custom-backdrop {
 }
 .case-card__image {
   max-width: 602px;
+  width: auto;
+  height: auto;
 }
 .case-card__content {
   padding-top: 5px;
@@ -6252,6 +6258,8 @@ body.is-loaded .modal-custom-backdrop {
 }
 .cooperation__image-column img {
   display: block;
+  width: auto;
+  height: auto;
 }
 .cooperation__background {
   position: absolute;
