@@ -3,8 +3,13 @@ section.cases
         h2.section-title.cases__title#anchor-cases Наши кейсы
 
     .cases__content
-        img( src=require('../../img/decor-3.png') alt="").dot.dot-3.cases__dot-right
-        img( src=require('../../img/decor-1.png') alt="").dot.dot-1.cases__dot-left
+        picture
+            source( srcset=require('../../img/decor-3.webp'), type='image/webp' )
+            img( loading="lazy" src=require('../../img/decor-3.png') alt="" width="110px" height="350px" ).dot.dot-3.cases__dot-right
+
+        picture
+            source( srcset=require('../../img/decor-1.webp'), type='image/webp' )
+            img( loading="lazy" src=require('../../img/decor-1.png') alt="" width="230px" height="110px" ).dot.dot-1.cases__dot-left
 
         .container.cases__container
             .cases__inner
@@ -20,7 +25,10 @@ section.cases
                         .swiper-slide.slider__slide
                             .cases__case.case-card
                                 .case-card__inner
-                                    img( src=require('../../img/case-1.jpg') alt="Статистика клиентского проекта под финскую стоматологию" ).case-card__image
+                                    picture
+                                        source( srcset=require('../../img/case-1.webp'), type='image/webp' )
+                                        img( loading="lazy" src=require('../../img/case-1.jpg') alt="Статистика клиентского проекта под финскую стоматологию" width="375px" height="250px" ).case-card__image
+
                                     .case-card__content
 
                                         .section-subtitle-1.case-card__content-title Клиентский проект под финскую стоматологию.
@@ -52,7 +60,10 @@ section.cases
                         .swiper-slide.slider__slide
                             .cases__case.case-card
                                 .case-card__inner
-                                    img( src=require('../../img/case-2.jpg') alt="Статистика собственного контентного проекта" ).case-card__image
+                                    picture
+                                        source( srcset=require('../../img/case-2.webp'), type='image/webp' )
+                                        img( loading="lazy" src=require('../../img/case-2.jpg') alt="Статистика клиентского проекта под финскую стоматологию" width="375px" height="250px" ).case-card__image
+
                                     .case-card__content
 
                                         .section-subtitle-1.case-card__content-title Собственный контентный проект.
@@ -78,7 +89,10 @@ section.cases
                         .swiper-slide.slider__slide
                             .cases__case.case-card
                                 .case-card__inner
-                                    img( src=require('../../img/case-3.jpg') alt="Статистика собственного мультиязычного проекта" ).case-card__image
+                                    picture
+                                        source( srcset=require('../../img/case-3.webp'), type='image/webp' )
+                                        img( loading="lazy" src=require('../../img/case-3.jpg') alt="Статистика клиентского проекта под финскую стоматологию" width="375px" height="250px" ).case-card__image
+
                                     .case-card__content
 
                                         .section-subtitle-1.case-card__content-title Собственный мультиязычный проект.

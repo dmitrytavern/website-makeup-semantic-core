@@ -1,5 +1,8 @@
 section.cooperation
-    img( src=require('../../img/partner-bg.jpg') alt="" ).cooperation__background
+    picture 
+        source( srcset=require('../../img/partner-bg.webp'), type='image/webp' )
+        img( loading="lazy" src=require('../../img/partner-bg.jpg') alt="" width="414px" height="1116" ).cooperation__background
+    
     .container
         .cooperation__inner
             h2.section-title-icon.cooperation__title#anchor-coop
@@ -12,8 +15,10 @@ section.cooperation
             .row
                 .col-12.col-lg-6.cooperation__image-column
                     picture
+                        source( srcset=require('../../img/partner-img.webp'), media="(min-width: 768px)" type='image/webp' )
                         source( srcset=require('../../img/partner-img.png') media="(min-width: 768px)" )
-                        img( src=require('../../img/partner-img-xs.png') alt="" )
+                        source( srcset=require('../../img/partner-img-xs.webp'), type='image/webp' )
+                        img( loading="lazy" src=require('../../img/partner-img-xs.png') alt="" width="414px" height="276px" )
 
                 .col-12.col-lg-6.cooperation__content
                     p.mb-45.cooperation__content-description.

@@ -1,5 +1,8 @@
 section.intro
-    img( src=require('../../img/header-bg.jpg') alt="").intro__background
+    picture
+        source( srcset=require('../../img/header-bg.webp'), type='image/webp' )
+        img( loading="lazy" src=require('../../img/header-bg.jpg') alt="" width="414px" height="896px" ).intro__background
+
     .container
         .intro__inner
 

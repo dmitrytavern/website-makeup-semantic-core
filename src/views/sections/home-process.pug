@@ -12,7 +12,9 @@ section.process
                         .swiper-slide
                             .video__inner
                                 .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=n4VXcYWvETU" )
-                                    img.video__img( src=require('../../img/process-1.png') alt="Процесс написания текстов" )
+                                    picture
+                                        source( srcset=require('../../img/process-1.webp'), type='image/webp' )
+                                        img.video__img( loading="lazy" src=require('../../img/process-1.png') alt="Процесс написания текстов" width="314px" height="210px" )
                                     .video__view
                                         i.icon-play
 
@@ -21,7 +23,9 @@ section.process
                         .swiper-slide
                             .video__inner
                                 .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=S4HSEbWPqlA" )
-                                    img.video__img( src=require('../../img/process-2.png') alt="Процесс написания текстов" )
+                                    picture
+                                        source( srcset=require('../../img/process-2.webp'), type='image/webp' )
+                                        img.video__img( loading="lazy" src=require('../../img/process-2.png') alt="Процесс написания текстов" width="314px" height="210px" )
                                     .video__view
                                         i.icon-play
 
@@ -30,7 +34,9 @@ section.process
                         .swiper-slide
                             .video__inner
                                 .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=stYvCmQg5cs" )
-                                    img.video__img( src=require('../../img/process-3.png') alt="Работа в команде" )
+                                    picture
+                                        source( srcset=require('../../img/process-3.webp'), type='image/webp' )
+                                        img.video__img( loading="lazy" src=require('../../img/process-3.png') alt="Работа в команде" width="314px" height="210px" )
                                     .video__view
                                         i.icon-play
 

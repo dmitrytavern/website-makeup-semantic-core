@@ -16,5 +16,8 @@ mixin footer()
                         svg
                             use( xlink:href=sprite('pay-payoneer') )
                     li.footer__paymethod-swift
-                        img( src=require('../img/swift.jpg') alt="swift" )
+                        picture
+                            source( srcset=require('../img/swift.webp'), type='image/webp' )
+                            img( loading="lazy" src=require('../img/swift.jpg') alt="swift" width="70px" height="22px" )
+
                 .footer__developed Разработка сайта - <a href="http://greatpix.studio/" target="_blank" class="footer__developed-link">GreatPix</a>

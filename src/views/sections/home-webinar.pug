@@ -12,7 +12,9 @@ section.webinar
                         .swiper-slide
                             .video__inner
                                 .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=iGe-sG1lLhE&feature=youtu.be" )
-                                    img.video__img( src=require('../../img/webinar-1.jpg') alt="Составление семантического ядра. Бурж vs рунет")
+                                    picture
+                                        source( srcset=require('../../img/webinar-1.webp'), type='image/webp' )
+                                        img.video__img( loading="lazy" src=require('../../img/webinar-1.jpg') alt="Составление семантического ядра. Бурж vs рунет" width="314px" height="176px")
                                     .video__view
                                         i.icon-play
 
@@ -21,7 +23,9 @@ section.webinar
                         .swiper-slide
                             .video__inner
                                 .video__img-box( data-fancybox data-src="https://www.youtube.com/watch?v=p2KWzE-YASk&feature=youtu.be" )
-                                    img.video__img( src=require('../../img/webinar-2.jpg') alt="Мастер-класс. Как сделать ТЗ копирайтеру для инфо статьи под RU/EN." )
+                                    picture
+                                        source( srcset=require('../../img/webinar-2.webp'), type='image/webp' )
+                                        img.video__img( loading="lazy" src=require('../../img/webinar-2.jpg') alt="Мастер-класс. Как сделать ТЗ копирайтеру для инфо статьи под RU/EN." width="314px" height="176px")
                                     .video__view
                                         i.icon-play
 

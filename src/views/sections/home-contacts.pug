@@ -2,7 +2,9 @@ section.contacts
     .container
         h2.section-title.contacts__title#anchor-contacts Контакты
         .contacts__inner
-            img( src=require('../../img/decor-1.png') alt='').dot.dot-1.contacts__dot-left
+            picture
+                source( srcset=require('../../img/decor-1.webp'), type='image/webp' )
+                img( loading="lazy" src=require('../../img/decor-1.png') alt="" width="230px" height="110px").dot.dot-1.contacts__dot-left
             h3.contacts__subtitle Свяжитесь с нами:
             .contacts__row
                 .contacts__social-list
@@ -73,32 +75,44 @@ section.contacts
                     .swiper-wrapper
 
                         .contacts-team-item.swiper-slide
-                            img.contacts-team-item__img( src=require('../../img/team/team-1.jpg') alt="Павлуцкий Александр")
+                            picture
+                                source( srcset=require('../../img/team/team-1.webp'), type='image/webp' )
+                                img.contacts-team-item__img( loading="lazy" src=require('../../img/team/team-1.jpg') alt="Павлуцкий Александр" width="145px" height="145px")
                             .contacts-team-item__name Павлуцкий Александр
                             .contacts-team-item__profession CEO
 
                         .contacts-team-item.swiper-slide
-                            img.contacts-team-item__img( src=require('../../img/team/team-2.jpg') alt="Gatsharan Sangrota")
+                            picture
+                                source( srcset=require('../../img/team/team-2.webp'), type='image/webp' )
+                                img.contacts-team-item__img( loading="lazy" src=require('../../img/team/team-2.jpg') alt="Gatsharan Sangrota" width="145px" height="145px")
                             .contacts-team-item__name Gatsharan Sangrota
                             .contacts-team-item__profession Главный Ядерщик
 
                         .contacts-team-item.swiper-slide
-                            img.contacts-team-item__img( src=require('../../img/team/team-3.jpg') alt="Herse Hedman")
+                            picture
+                                source( srcset=require('../../img/team/team-3.webp'), type='image/webp' )
+                                img.contacts-team-item__img( loading="lazy" src=require('../../img/team/team-3.jpg') alt="Herse Hedman" width="145px" height="145px")
                             .contacts-team-item__name Herse Hedman
                             .contacts-team-item__profession Copywriter
 
                         .contacts-team-item.swiper-slide
-                            img.contacts-team-item__img( src=require('../../img/team/team-4.jpg') alt="Jordan Ntolo")
+                            picture
+                                source( srcset=require('../../img/team/team-4.webp'), type='image/webp' )
+                                img.contacts-team-item__img( loading="lazy" src=require('../../img/team/team-4.jpg') alt="Jordan Ntolo" width="145px" height="145px")
                             .contacts-team-item__name Jordan Ntolo
                             .contacts-team-item__profession Copywriter
 
                         .contacts-team-item.swiper-slide
-                            img.contacts-team-item__img( src=require('../../img/team/team-5.jpg') alt="Azar Hosseini")
+                            picture
+                                source( srcset=require('../../img/team/team-5.webp'), type='image/webp' )
+                                img.contacts-team-item__img( loading="lazy" src=require('../../img/team/team-5.jpg') alt="Azar Hosseini" width="145px" height="145px")
                             .contacts-team-item__name Azar Hosseini
                             .contacts-team-item__profession Copywriter
 
                         .contacts-team-item.swiper-slide
-                            img.contacts-team-item__img( src=require('../../img/team/team-6.jpg') alt="Hu Guiying")
+                            picture
+                                source( srcset=require('../../img/team/team-6.webp'), type='image/webp' )
+                                img.contacts-team-item__img( loading="lazy" src=require('../../img/team/team-6.jpg') alt="Hu Guiying" width="145px" height="145px")
                             .contacts-team-item__name Hu Guiying
                             .contacts-team-item__profession Copywriter
 

@@ -1,6 +1,11 @@
 section.pluses
-    img( src=require('../../img/decor-1.png') alt="" ).dot.dot-1.pluses__dot-top
-    img( src=require('../../img/decor-1.png') alt="" ).dot.dot-1.pluses__dot-center
+    picture
+        source( srcset=require('../../img/decor-1.webp'), type='image/webp' )
+        img( loading="lazy" src=require('../../img/decor-1.png') alt="" width="230px" height="110px" ).dot.dot-1.pluses__dot-top
+
+    picture
+        source( srcset=require('../../img/decor-1.webp'), type='image/webp' )
+        img( loading="lazy" src=require('../../img/decor-1.png') alt="" width="230px" height="110px" ).dot.dot-1.pluses__dot-center
 
     .container
         .pluses__inner
@@ -23,7 +28,10 @@ section.pluses
                                     li Вычитку текстов нашим редактором.
 
                 div.pluses__prices-column
-                    img( src=require('../../img/decor-2.png') alt="").dot.dot-2.pluses__dot-prices
+                    picture
+                        source( srcset=require('../../img/decor-2.webp'), type='image/webp' )
+                        img( loading="lazy" src=require('../../img/decor-2.png') alt="" width="350px" height="110px" ).dot.dot-2.pluses__dot-prices
+                    
                     .pluses__prices
                         ul.pluses__prices-list
                             li

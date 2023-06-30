@@ -8,7 +8,10 @@ section.prices
                 .prices-block__inner
                     .prices-block__image( data-fancybox data-src=require('../../img/article-img.jpg') )
                         i.icon-zoom-in
-                        img( src=require('../../img/article-thumb.jpg') alt="Пример услуги" )
+
+                        picture
+                            source( srcset=require('../../img/article-thumb.webp'), type='image/webp' )
+                            img( loading="lazy" src=require('../../img/article-thumb.jpg') alt="Пример услуги" width="340px" height="216px" )
 
                     h4.prices-block__title ТЗ + ключи под Статью
                     ul.prices-block__list.list
@@ -70,9 +73,11 @@ section.prices
 
             .prices-block
                 .prices-block__inner
-                    .prices-block__image( data-fancybox data-src=require('../../img/longread-img.png') )
+                    .prices-block__image( data-fancybox data-src=require('../../img/longread-1-img.jpg') )
                         i.icon-zoom-in
-                        img( src=require('../../img/longread-thumb.jpg') alt="Пример услуги" )
+                        picture
+                            source( srcset=require('../../img/longread-thumb.webp'), type='image/webp' )
+                            img( loading="lazy" src=require('../../img/longread-thumb.jpg') alt="Пример услуги" width="340px" height="216px" )
 
                     h4.prices-block__title ТЗ + ключи под Лонгрид
                     ul.prices-block__list.list
